@@ -13,17 +13,31 @@ export default function Header() {
                     <NavbarToggle aria-controls='navbarScroll' />
                     <NavbarCollapse id='navbarScroll'>
                         <Nav className='me-auto'>
-                            <Link to='/mercury' className='planet-page-link text-uppercase link-underline link-underline-opacity-0 d-sm-inline-flex flex-sm-row' id='border-0'>
+                            <Link to='/mercury' className='planet-page-link text-uppercase link-underline link-underline-opacity-0' id='border-0'>
                                 <img src="/assets/mercury-circle.png" className='me-4' alt="" />
                                 <span>Mercury</span>
                             </Link>
-                            <Link to='/venus' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0'>Venus</Link>
-                            <Link to='/earth' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0'>Earth</Link>
-                            <Link to='/mars' className='planet-page-link text-uppercase link-underline link-underline-opacity-0'>Mars</Link>
-                            <Link to='/jupiter' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0'>Jupiter</Link>
-                            <Link to='/saturn' className='planet-page-link text-uppercase link-underline link-underline-opacity-0'>Saturn</Link>
-                            <Link to='/uranus' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0'>Uranus</Link>
-                            <Link to='/neptune' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0'>Neptune</Link>
+                            <Link to='/venus' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0'>
+                                <img src="/assets/venus-circle.png" className='me-4' alt="" />
+                                <span>Venus</span></Link>
+                            <Link to='/earth' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0'>
+                                <img src="/assets/earth-circle.png" className='me-4' alt="" />
+                                <span>Earth</span></Link>
+                            <Link to='/mars' className='planet-page-link text-uppercase link-underline link-underline-opacity-0'>
+                                <img src="/assets/mars-circle.png" className='me-4' alt="" />
+                                <span>Mars</span></Link>
+                            <Link to='/jupiter' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0'>
+                                <img src="/assets/jupiter-circle.png" className='me-4' alt="" />
+                                <span>Jupiter</span></Link>
+                            <Link to='/saturn' className='planet-page-link text-uppercase link-underline link-underline-opacity-0'>
+                                <img src="/assets/saturn-circle.png" className='me-4' alt="" />
+                                <span>Saturn</span></Link>
+                            <Link to='/uranus' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0'>
+                                <img src="/assets/uranus-circle.png" className='me-4' alt="" />
+                                <span>Uranus</span></Link>
+                            <Link to='/neptune' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0'>
+                                <img src="/assets/neptune-circle.png" className='me-4' alt="" />
+                                <span>Neptune</span></Link>
                         </Nav>
                     </NavbarCollapse>
                 </Container>
