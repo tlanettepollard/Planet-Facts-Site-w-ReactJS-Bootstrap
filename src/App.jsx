@@ -1,5 +1,7 @@
 import React from 'react';
 import '../dist/css/main.css';
+import Header from './layout/Header';
+import PlanetCard from './layout/PlanetCard';
 
 
 const App = () => {
@@ -7,7 +9,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <Header />
+      <PlanetCard />
     </div>
   );
 };
