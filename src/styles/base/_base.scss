@@ -7,12 +7,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px solid black;
+    outline: 1px solid white;
 }
 
 body {
     width: 100%;
     min-height: 100vh;
     margin: auto;
-    background-color: $page-bg;
+    background-color: $page-bg !important;
+}
+
+ul,
+li {
+    text-decoration: none;
 }

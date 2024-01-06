@@ -1,5 +1,6 @@
 import React from 'react';
 import '../dist/css/main.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './layout/Header';
 import PlanetCard from './layout/PlanetCard';
 
