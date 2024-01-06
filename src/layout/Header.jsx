@@ -10,11 +10,11 @@ export default function Header() {
             <Navbar collapseOnSelect expand="md" className=''>
                 <Container className='d-md-flex flex-md-column'>
                     <NavbarBrand>
-                        <h1 className='text-uppercase'>The Planets</h1>
+                        <h1 className='text-uppercase pb-md-3'>The Planets</h1>
                     </NavbarBrand>
                     <NavbarToggle aria-controls='navbarScroll' id='navbarBtn' className='custom-toggler' />
                     <NavbarCollapse id='navbarCollapse'>
-                        <Nav className='me-auto d-md-flex flex-md-row' id='navbarNav'>
+                        <Nav className='me-auto d-md-inline-flex justify-content-md-center align-items-md-start gap-4 pe-md-2' id='navbarNav'>
                             <Link to='/mercury' className='planet-page-link text-uppercase link-underline link-underline-opacity-0 d-inline-flex justify-content-between align-items-center border-bottom border-secondary border-1 border-opacity-25' id='border-0'>
                                 <div>
                                     <img src="/assets/mercury-circle.png" className='me-4 d-md-none' alt="" />
