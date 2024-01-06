@@ -6,7 +6,7 @@ body {
     font-style: normal;
     font-size: .875rem;
     line-height: .3125rem;
-    color: $main-light;
+    color: $main-light !important;
 }
 
 h1 {
@@ -14,7 +14,7 @@ h1 {
     font-size: 5rem;
     font-style: normal;
     line-height: 6.4375rem;
-    color: $main-light;
+    color: $main-light !important;
     text-transform: uppercase;
 }
 
@@ -26,7 +26,7 @@ h2 {
     line-height: 3.25rem;
     letter-spacing: -0.0938rem;
     text-transform: uppercase;
-    color: $main-light;
+    color: $main-light !important;
 }
 
 h3 {
@@ -37,7 +37,7 @@ h3 {
     line-height: 1.5625rem;
     letter-spacing: .1607rem;
     text-transform: uppercase;
-    color: $main-light;
+    color: $main-light !important;
 }
 
 h4 {
@@ -49,4 +49,8 @@ h4 {
     letter-spacing: .0625rem;
     text-transform: uppercase;
     color: $main-light;
+}
+
+.planet-page-link {
+    color: $main-light !important;
 }
