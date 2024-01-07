@@ -23,4 +23,6 @@ const MainInfoCard = (props) => {
     const [toggleOverview, setToggleOverview] = useState(false);
     const [toggleStructure, setToggleStructure] = useState(false);
     const [toggleSurface, setToggleSurface] = useState(false);
+    const [navBtnStyle, setNavBtnStyle] = useState({ borderBottom: `3px solid ${color}`, color: "#ffffff" });
+
 }
