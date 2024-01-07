@@ -18,5 +18,9 @@ const MainInfoCard = (props) => {
     const [surfaceImage, setSurfaceImage] = useState(props.images.geology);
     const [sourceLink, setSourceLink] = useState(props.overview.source);
     const [showSurfaceImage, setShowSurfaceImage] = useState(false);
-    const [color, setColor] = useState()
+    const [color, setColor] = useState(props.planet.color);
+    const [size, setSize] = useState(props.planet.size);
+    const [toggleOverview, setToggleOverview] = useState(false);
+    const [toggleStructure, setToggleStructure] = useState(false);
+    const [toggleSurface, setToggleSurface] = useState(false);
 }
