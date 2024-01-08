@@ -1,21 +1,29 @@
 import React, { useState, useEffect } from 'react';
+import PlanetDataList from './PlanetDataList';
 
-export default function PlanetCard(props) {
+export default function PlanetMainCard(props) {
 
     return (
         <div className='planet-card'>
-            <MainInfoCard />
-            <MainDataList />
+            <MainCard
+                planet={props.planetObj}
+                name={props.planetObj.name}
+                overview={props.planetObj.overview}
+                structure={props.planetObj.structure}
+                geology={props.planetObj.geology}
+                images={props.planetObj.images}
+            />
+            <PlanetDataList planet={props.planetObj} />
         </div>
     );
 }
 
 // Get information about each planet
-const MainInfoCard = (props) => {
+const MainCard = (props) => {
     const [name, setName] = useState(props.name);
     const [text, setText] = useState(props.overview.content);
     const [imageUrl, setImageUrl] = useState(props.images.planet);
-    const [surfaceImage, setSurfaceImage] = useState(props.images.geology);
+    const [surfaceImagePath, setSurfaceImagePath] = useState(props.images.geology);
     const [sourceLink, setSourceLink] = useState(props.overview.source);
     const [showSurfaceImage, setShowSurfaceImage] = useState(false);
     const [color, setColor] = useState(props.planet.color);
@@ -75,7 +83,7 @@ const MainInfoCard = (props) => {
     const showSurfaceBtn = () => {
         setText(props.geology.content);
         setImageUrl(props.images.planet);
-        setSurfaceImage(props.images.geology)
+        setSurfaceImagePath(props.images.geology)
         setSourceLink(props.geology.source);
         showPlanetImage();
         setToggleOverview(false);
@@ -101,6 +109,59 @@ const MainInfoCard = (props) => {
     function setBtnBorderColor(color) {
         setNavBtnStyle({ borderBottom: `3px solid ${color}`, color: '#ffffff' })
     }
+
+    function changeNavBtnValues() {
+        let structure = document.querySelector('#structureBtn');
+        let surface = document.querySelector('#surfaceBtn');
+        structure.childNodes[1].nodeValue = 'internal structure';
+        surface.childNodes[1].nodeValue = 'surface geology';
+    }
+
+    function resetNavBtnValues() {
+        let structure = document.querySelector('#structureBtn');
+        let surface = document.querySelector('#surfaceBtn');
+        structure.childNodes[1].nodeValue = 'structure';
+        surface.childNodes[1].nodeValue = 'geology';
+    }
+
+
+    // Planet information section
+    return (
+        <div className='container planet-card__container'>
+            <nav className='planet-card__nav'>
+                <ul>
+                    <li>
+                        <button onClick={showOverviewBtn} id='overviewBtn' style={toggleOverview ? navBtnStyle : null}>
+                            <span className='hide'>01</span>
+                            Overview
+                        </button>
+                    </li>
+                    <li>
+                        <button onClick={showStructureBtn} id='structureBtn' style={toggleStructure ? navBtnStyle : null}>
+                            <span className='hide'>02</span>
+                            Structure
+                        </button>
+                    </li>
+                    <li>
+                        <button onClick={showSurfaceBtn} id='surfaceBtn' style={toggleSurface ? navBtnStyle : null}>
+                            <span className='hide'>03</span>
+                            Surface
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div className='planet-image-container container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${imageUrl.substring(1)})`, width: `${size}%` }}>
+                {showSurfaceImage ? <img className='surface-image' src={`${process.env.PUBLIC_URL}${surfaceImagePath.substring(1)}`} alt='surface planet' /> : null}
+            </div>
+            <div className='planet-card__content'>
+                <h2>{name}</h2>
+                <p>{text}</p>
+                <span>Source: <a href={sourceLink}>Wikipedia</a></span>
+            </div>
+        </div>
+    );
+
+
 
 
 
