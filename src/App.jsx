@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from 'react';
-/*import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-  useParams
-} from 'react-router-dom';*/
+import { Routes, Route, Navigate, useParams } from 'react-router-dom';
 import '../dist/css/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import data from './data.json';
+import data from '/src/data.json';
 import Header from './layout/Header';
 import PlanetMainCard from './layout/PlanetMainCard';
 
@@ -19,8 +13,16 @@ const App = () => {
   return (
 
     <div className="App">
-      <Header />
-      <PlanetMainCard />
+      <Routes>
+        <React.Fragment>
+          <Route path='/' element={<Header />} />
+          <Route exact path='/Planet-Facts-Site-w-ReactJS-Bootstrap' />
+          <Route path='*' element={<Navigate to='/mercury' replace={true} />} />
+          <Route path='/:planetName' element={<Planet />} />
+
+        </React.Fragment>
+      </Routes>
+
 
     </div>
 
@@ -28,6 +30,27 @@ const App = () => {
 };
 
 
+function Planet() {
+  const { planetName } = useParams();
+  const [planet, setPlanet] = useState(null);
+
+  useEffect(() => {
+    let planet = data.find((planetObj) => planetObj.name === capitalize(planetName))
+    setPlanet(planet);
+  }, [planetName])
+
+  function capitalize(word) {
+    let first = word.charAt(0);
+    return first.toUpperCase() + word.slice(1);
+  }
+
+  if (planet === null) {
+    return <p>Loading profile...</p>
+  }
+  return (
+    <PlanetMainCard planetName={planetName} planetObj={planet} />
+  )
+}
 
 
 

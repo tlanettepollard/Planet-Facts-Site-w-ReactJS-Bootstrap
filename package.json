@@ -1,5 +1,6 @@
 {
-  "name": "vite-template-react",
+  "homepage": "https://github.com/tlanettepollard/Planet-Facts-Site-w-ReactJS-Bootstrap",
+  "name": "planet-facts-site-w-reactjs-bootstrap",
   "version": "1.4.0",
   "scripts": {
     "start": "vite --port 3000 --open",
