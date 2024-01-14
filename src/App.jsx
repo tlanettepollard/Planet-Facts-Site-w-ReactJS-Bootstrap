@@ -13,9 +13,9 @@ const App = () => {
   return (
 
     <div className="App">
+      <Header />
       <Routes>
-        <React.Fragment>
-          <Route path='/' element={<Header />} />
+        <React.Fragment> 
           <Route exact path='/Planet-Facts-Site-w-ReactJS-Bootstrap' />
           <Route path='*' element={<Navigate to='/mercury' replace={true} />} />
           <Route path='/:planetName' element={<Planet />} />
