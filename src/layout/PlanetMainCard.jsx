@@ -94,7 +94,7 @@ const MainCard = (props) => {
     // Functions to handle images
 
     function showPlanetImage() {
-        setSurfaceImage(true);
+        setShowSurfaceImage(true);
     }
 
     function hidePlanetImage() {
@@ -150,8 +150,8 @@ const MainCard = (props) => {
                     </li>
                 </ul>
             </nav>
-            <div className='planet-image-container container'>
-                
+            <div className='planet-image-container container' style={{ backgroundImage: `url(${imageUrl.substring(1)})`, width: `${size}%` }}>
+                {showSurfaceImage ? <img className='surface-image' src={`${surfaceImagePath.substring(1)}`} alt='surface planet' /> : null}
             </div>
             <div className='planet-card__content'>
                 <h2>{name}</h2>
