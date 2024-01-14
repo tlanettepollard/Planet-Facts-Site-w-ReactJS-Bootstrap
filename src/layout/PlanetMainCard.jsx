@@ -150,8 +150,8 @@ const MainCard = (props) => {
                     </li>
                 </ul>
             </nav>
-            <div className='planet-image-container container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${imageUrl.substring(1)})`, width: `${size}%` }}>
-                {showSurfaceImage ? <img className='surface-image' src={`${process.env.PUBLIC_URL}${surfaceImagePath.substring(1)}`} alt='surface planet' /> : null}
+            <div className='planet-image-container container'>
+                
             </div>
             <div className='planet-card__content'>
                 <h2>{name}</h2>
