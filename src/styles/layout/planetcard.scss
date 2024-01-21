@@ -1,0 +1,18 @@
+.planet-card {
+    &__nav {
+        ul {
+            button {
+               
+            }
+        }
+    }
+
+
+    .planet-image-container {
+        margin: 2.5rem auto;
+        height: 15.625rem;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
