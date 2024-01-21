@@ -1,9 +1,7 @@
 .planet-card {
     &__nav {
         ul {
-            button {
-               
-            }
+            button {}
         }
     }
 
@@ -14,5 +12,13 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+
+        .surface-image {
+            position: absolute;
+            width: 5rem;
+            
+        }
     }
+
+
 }
