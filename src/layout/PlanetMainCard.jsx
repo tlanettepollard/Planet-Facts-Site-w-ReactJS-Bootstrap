@@ -29,6 +29,7 @@ const MainInfoCard = (props) => {
     const [showSurfaceImage, setShowSurfaceImage] = useState(false);
     const [color, setColor] = useState(props.planet.color);
     const [size, setSize] = useState(props.planet.size);
+    //const [geologySize, setGeologySize] = useState(props.planet.geologysize);
     const [windowSize, setWindowSize] = useState(window.innerWidth);
     const [navBtnStyle, setBtnNavStyle] = useState({ borderBottom: `3px solid ${color}`, color: "#ffffff" });
     const [toggleOverview, setToggleOverview] = useState(false);
@@ -87,6 +88,7 @@ const MainInfoCard = (props) => {
         setSurfaceImage(props.images.geology)
         setSourceLink(props.geology.source);
         showSurfacePlanetImage();
+        //setGeologySize(props.planet.geolgoysize);
         setToggleOverview(false);
         setToggleStructure(false);
         setToggleSurface(true);
@@ -136,22 +138,22 @@ const MainInfoCard = (props) => {
     return (
         <div className='container planet-card'>
             <nav className='planet-card__nav'>
-                <ul className='d-flex flex-row justify-content-between'>
+                <ul className='d-flex flex-row justify-content-between px-2 py-2 border-bottom border-top border-1 border-secondary border-md-none'>
                     <li>
-                        <button onClick={showOverviewBtn} id='overviewBtn' style={toggleOverview ? navBtnStyle : null}>
-                            <span className='hide'>01 </span>
+                        <button onClick={showOverviewBtn} className='btn btn-sm btn-dark text-uppercase' id='overviewBtn' role='button' style={toggleOverview ? navBtnStyle : null}>
+                            <span className='d-none d-md-block'>01 </span>
                             Overview
                         </button>
                     </li>
                     <li>
-                        <button onClick={showStructureBtn} id='structureBtn' style={toggleStructure ? navBtnStyle : null}>
-                            <span className='hide'>02 </span>
+                        <button onClick={showStructureBtn} className='btn btn-sm btn-dark text-uppercase' id='structureBtn' style={toggleStructure ? navBtnStyle : null}>
+                            <span className='d-none d-md-block'>02 </span>
                             Structure
                         </button>
                     </li>
                     <li>
-                        <button onClick={showSurfaceBtn} id='surfaceBtn' style={toggleSurface ? navBtnStyle : null}>
-                            <span className='hide'>03 </span>
+                        <button onClick={showSurfaceBtn} id='surfaceBtn' className='btn btn-sm btn-dark text-uppercase' style={toggleSurface ? navBtnStyle : null}>
+                            <span className='d-none d-md-block'>03 </span>
                             Surface
                         </button>
                     </li>
@@ -159,9 +161,9 @@ const MainInfoCard = (props) => {
                 </ul>
             </nav>
             <div className='planet-image-container img-fluid' style={{ backgroundImage: `url(${imageUrl})`, width: `${size.small}` }}>
-                {showSurfaceImage ? <img className='surface-image' src={`${surfaceImage.substring(1)}`} /> : null}
+                {showSurfaceImage ? <img className='surface-image img-fluid' src={`${surfaceImage.substring(1)}`} /> : null}
             </div>
-            <div className='planet-card__content'>
+            <div className='planet-card__content container text-center text-md-start position-relative'>
                 <h2>{name}</h2>
                 <p>{planetInfo}</p>
                 <span>Source: <a href={sourceLink}>Wikipedia</a></span>
