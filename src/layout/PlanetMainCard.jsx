@@ -27,11 +27,11 @@ const MainInfoCard = (props) => {
     const [imageUrl, setImageUrl] = useState(props.images.planet);
     const [surfaceImage, setSurfaceImage] = useState(props.images.geology);
     const [showSurfaceImage, setShowSurfaceImage] = useState(false);
-    const [color, setColor] = useState(props.planet.color);
-    const [size, setSize] = useState(props.planet.size);
+    //const [color, setColor] = useState(props.planet.color);
+    //const [size, setSize] = useState(props.planet.size);
     //const [geologySize, setGeologySize] = useState(props.planet.geologysize);
     const [windowSize, setWindowSize] = useState(window.innerWidth);
-    const [navBtnStyle, setBtnNavStyle] = useState({ borderBottom: `3px solid ${color}`, color: "#ffffff" });
+    //const [navBtnStyle, setNavBtnStyle] = useState({ borderBottom: `3px solid ${color}`, color: "#fff" });
     const [toggleOverview, setToggleOverview] = useState(false);
     const [toggleStructure, setToggleStructure] = useState(false);
     const [toggleSurface, setToggleSurface] = useState(false);
@@ -39,14 +39,16 @@ const MainInfoCard = (props) => {
     // Show Overview and set button background & border
     useEffect(() => {
         showOverviewBtn();
+
         window.addEventListener('resize', () => {
-            setWindowSize(window.innerWidth);
+            setWindowSize(window.innerWidth)
         })
-        if (windowSize < 768) {
-            setBtnBorderColor(color)
+
+        if (windowSize < 600) {
+            // setBtnBorderColor(color)
             resetNavBtnValues()
         } else {
-            setBtnBgColor(color)
+            //setBtnBgColor(color)
             changeNavBtnValues()
         }
         return () => {
@@ -54,7 +56,7 @@ const MainInfoCard = (props) => {
                 setWindowSize(window.innerWidth)
             })
         }
-    }, [props.name, windowSize, color])
+    }, [props.name, windowSize])
 
 
     // Nav Btn Functions
@@ -64,8 +66,8 @@ const MainInfoCard = (props) => {
         setPlanetInfo(props.overview.content);
         setImageUrl(props.images.planet);
         setSourceLink(props.overview.source);
-        setSize(props.planet.size);
-        setColor(props.planet.color);
+        //setSize(props.planet.size);
+        //setColor(props.planet.color);
         hideSurfacePlanetImage()
         setToggleOverview(true);
         setToggleStructure(false);
@@ -77,8 +79,8 @@ const MainInfoCard = (props) => {
         setImageUrl(props.images.internal)
         setSourceLink(props.structure.source);
         hideSurfacePlanetImage()
-        setToggleOverview(false);
         setToggleStructure(true);
+        setToggleOverview(false);
         setToggleSurface(false);
     }
 
@@ -89,12 +91,11 @@ const MainInfoCard = (props) => {
         setSourceLink(props.geology.source);
         showSurfacePlanetImage();
         //setGeologySize(props.planet.geolgoysize);
+        setToggleSurface(true);
         setToggleOverview(false);
         setToggleStructure(false);
-        setToggleSurface(true);
+
     }
-
-
 
 
     // Functions to handle images
@@ -108,14 +109,14 @@ const MainInfoCard = (props) => {
 
     // Functions to set button bg & border colors
 
-    function setBtnBgColor(color) {
-        setBtnNavStyle({ backgroundColor: `${color}` })
+    /*function setBtnBgColor(color) {
+        setNavBtnStyle({ backgroundColor: `${color}` })
     }
 
     function setBtnBorderColor(color) {
-        setBtnNavStyle({ borderBottom: `3px solid ${color}` })
+        setNavBtnStyle({ borderBottom: `3px solid ${color}`, color: '#fff' })
     }
-
+*/
 
     function changeNavBtnValues() {
         let structure = document.querySelector('#structureBtn');
@@ -140,19 +141,19 @@ const MainInfoCard = (props) => {
             <nav className='planet-card__nav'>
                 <ul className='d-flex flex-row justify-content-between px-2 py-2 border-bottom border-top border-1 border-secondary border-md-none'>
                     <li>
-                        <button onClick={showOverviewBtn} className='btn btn-sm btn-dark text-uppercase' id='overviewBtn' role='button' style={toggleOverview ? navBtnStyle : null}>
+                        <button onClick={showOverviewBtn} className='btn btn-sm btn-dark text-uppercase' id='overviewBtn' role='button'>
                             <span className='d-none d-md-block'>01 </span>
                             Overview
                         </button>
                     </li>
                     <li>
-                        <button onClick={showStructureBtn} className='btn btn-sm btn-dark text-uppercase' id='structureBtn' style={toggleStructure ? navBtnStyle : null}>
+                        <button onClick={showStructureBtn} className='btn btn-sm btn-dark text-uppercase' id='structureBtn' role='button'>
                             <span className='d-none d-md-block'>02 </span>
                             Structure
                         </button>
                     </li>
                     <li>
-                        <button onClick={showSurfaceBtn} id='surfaceBtn' className='btn btn-sm btn-dark text-uppercase' style={toggleSurface ? navBtnStyle : null}>
+                        <button onClick={showSurfaceBtn} id='surfaceBtn' className='btn btn-sm btn-dark text-uppercase' role='button'>
                             <span className='d-none d-md-block'>03 </span>
                             Surface
                         </button>
@@ -160,7 +161,7 @@ const MainInfoCard = (props) => {
 
                 </ul>
             </nav>
-            <div className='planet-image-container img-fluid' style={{ backgroundImage: `url(${imageUrl})`, width: `${size.small}` }}>
+            <div className='planet-image-container img-fluid' style={{ backgroundImage: `url(${imageUrl})` }}>
                 {showSurfaceImage ? <img className='surface-image img-fluid' src={`${surfaceImage.substring(1)}`} /> : null}
             </div>
             <div className='planet-card__content container text-center text-md-start position-relative'>
