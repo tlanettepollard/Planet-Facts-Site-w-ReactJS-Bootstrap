@@ -139,21 +139,21 @@ const MainInfoCard = (props) => {
     return (
         <div className='container planet-card'>
             <nav className='planet-card__nav'>
-                <ul className='d-flex flex-row justify-content-between px-2 py-2 border-bottom border-top border-1 border-secondary border-md-none'>
+                <ul id={name} className='d-flex flex-row justify-content-between px-2 py-2 border-bottom border-top border-1 border-secondary border-md-none'>
                     <li>
-                        <button onClick={showOverviewBtn} className='btn btn-sm btn-dark text-uppercase' id='overviewBtn' role='button'>
+                        <button onClick={showOverviewBtn} type='button' className='btn btn-sm btn-dark text-uppercase' id='overviewBtn' data-bs-toggle='button' aria-selected='true' active>
                             <span className='d-none d-md-block'>01 </span>
                             Overview
                         </button>
                     </li>
                     <li>
-                        <button onClick={showStructureBtn} className='btn btn-sm btn-dark text-uppercase' id='structureBtn' role='button'>
+                        <button onClick={showStructureBtn} className='btn btn-sm btn-dark text-uppercase' id='structureBtn' type='button' data-bs-toggle='button' aria-selected='false'>
                             <span className='d-none d-md-block'>02 </span>
                             Structure
                         </button>
                     </li>
                     <li>
-                        <button onClick={showSurfaceBtn} id='surfaceBtn' className='btn btn-sm btn-dark text-uppercase' role='button'>
+                        <button onClick={showSurfaceBtn} id='surfaceBtn' className='btn btn-sm btn-dark text-uppercase' type='button' data-bs-toggle='button' aria-selected='false'>
                             <span className='d-none d-md-block'>03 </span>
                             Surface
                         </button>
