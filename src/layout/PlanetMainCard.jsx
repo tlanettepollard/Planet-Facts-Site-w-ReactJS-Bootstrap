@@ -140,7 +140,7 @@ const MainInfoCard = (props) => {
     return (
         <div className='container planet-card'>
             <nav className='planet-card__nav'>
-                <ul id={name} className='d-flex flex-row justify-content-between px-2 py-2 border-bottom border-top border-1 border-secondary border-md-none'>
+                <ul className='d-flex flex-row justify-content-between px-2 py-2 border-bottom border-top border-1 border-secondary border-md-none'>
                     <li>
                         <Button onClick={showOverviewBtn} type='button' className='btn btn-sm btn-dark text-uppercase' id='overviewBtn'>
                             <span className='d-none d-md-block'>01 </span>
