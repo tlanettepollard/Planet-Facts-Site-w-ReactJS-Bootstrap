@@ -154,7 +154,7 @@ const MainInfoCard = (props) => {
                         </Button>
                     </li>
                     <li>
-                        <Button onClick={showSurfaceBtn} type='button' id='surfaceBtn' className='btn btn-sm btn-dark text-uppercase' >
+                        <Button onClick={showSurfaceBtn} type='button' id='surfaceBtn' className='btn btn-sm btn-dark text-uppercase'>
                             <span className='d-none d-md-block'>03 </span>
                             Surface
                         </Button>
