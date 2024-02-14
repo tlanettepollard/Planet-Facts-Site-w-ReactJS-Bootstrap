@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PlanetDataList from './PlanetDataList';
+import { Button } from 'react-bootstrap';
 
 export default function PlanetMainCard(props) {
 
@@ -141,22 +142,22 @@ const MainInfoCard = (props) => {
             <nav className='planet-card__nav'>
                 <ul id={name} className='d-flex flex-row justify-content-between px-2 py-2 border-bottom border-top border-1 border-secondary border-md-none'>
                     <li>
-                        <button onClick={showOverviewBtn} type='button' className='btn btn-sm btn-dark text-uppercase' id='overviewBtn' data-bs-toggle='button' aria-selected='true' active>
+                        <Button onClick={showOverviewBtn} type='button' className='btn btn-sm btn-dark text-uppercase' id='overviewBtn'>
                             <span className='d-none d-md-block'>01 </span>
                             Overview
-                        </button>
+                        </Button>
                     </li>
                     <li>
-                        <button onClick={showStructureBtn} className='btn btn-sm btn-dark text-uppercase' id='structureBtn' type='button' data-bs-toggle='button' aria-selected='false'>
+                        <Button onClick={showStructureBtn} type='button' className='btn btn-sm btn-dark text-uppercase' id='structureBtn'>
                             <span className='d-none d-md-block'>02 </span>
                             Structure
-                        </button>
+                        </Button>
                     </li>
                     <li>
-                        <button onClick={showSurfaceBtn} id='surfaceBtn' className='btn btn-sm btn-dark text-uppercase' type='button' data-bs-toggle='button' aria-selected='false'>
+                        <Button onClick={showSurfaceBtn} type='button' id='surfaceBtn' className='btn btn-sm btn-dark text-uppercase' >
                             <span className='d-none d-md-block'>03 </span>
                             Surface
-                        </button>
+                        </Button>
                     </li>
 
                 </ul>
