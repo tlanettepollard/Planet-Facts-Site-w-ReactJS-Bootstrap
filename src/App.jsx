@@ -4,7 +4,7 @@ import '../dist/css/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from '/src/data.json';
 import Header from './layout/Header';
-import PlanetMainCard from './layout/PlanetMainCard';
+import PlanetContent from './layout/PlanetContent';
 
 
 const App = () => {
@@ -13,17 +13,15 @@ const App = () => {
   return (
 
     <div className="App">
+
       <Header />
       <Routes>
         <React.Fragment>
           <Route exact path='/Planet-Facts-Site-w-ReactJS-Bootstrap' />
           <Route path='*' element={<Navigate to='/mercury' replace={true} />} />
           <Route path='/:planetName' element={<Planet />} />
-
         </React.Fragment>
       </Routes>
-
-
     </div>
 
   );
@@ -48,9 +46,10 @@ function Planet() {
     return <p>Loading profile...</p>
   }
   return (
-    <PlanetMainCard planetName={planetName} planetObj={planet} />
+    <PlanetContent planetName={planetName} planetObj={planet} />
   )
 }
+
 
 
 
