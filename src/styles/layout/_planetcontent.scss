@@ -1,12 +1,10 @@
 .planet-card {
     &__nav {
-        ul {
-            
-        }
+        ul {}
     }
 
 
-    .planet-image-container {
+    .planet-image__container {
         margin: 2.5rem auto;
         height: 15.625rem;
         background-position: center;
@@ -16,7 +14,7 @@
         .surface-image {
             position: absolute;
             width: 5rem;
-            
+
         }
     }
 
