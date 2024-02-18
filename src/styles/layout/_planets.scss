@@ -1,5 +1,61 @@
 .planet-card {
     .planet-image__container {
-        height: auto;
+        height: auto
     }
+
+    // Planet Sizes
+    #mercury .planet-image {
+        width: 6.9375rem;
+        height: 6.9375rem;
+
+        @include bp-tablet-up {
+            width: 11.5rem;
+            height: 11.5rem;
+        }
+
+        @include bp-xl-up {
+            width: 24.375rem;
+            height: 24.375rem;
+        }
+    }
+
+    #venus .planet-image {
+        width: 9.625rem;
+        height: 9.625rem;
+
+        @include bp-tablet-up {
+            width: 15.8125rem;
+            height: 15.8125rem;
+        }
+
+        @include bp-xl-up {
+            width: 25rem;
+            height: 25rem;
+        }
+    }
+
+    #earth .planet-image {
+        width: 10.8125rem;
+        height: 10.8125rem;
+
+        @include bp-tablet-up {
+            width: 17.8125rem;
+            height: 17.8125rem;
+        }
+
+        @include bp-xl-up {
+            width: 28.125rem;
+            height: 28.125rem;
+        }
+    }
+
+    #mars .planet-image {}
+
+    #jupiter .planet-image {}
+
+    #saturn .planet-image {}
+
+    #uranus .planet-image {}
+
+    #neptune .planet-image {}
 }
