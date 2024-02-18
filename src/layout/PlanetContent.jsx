@@ -81,7 +81,7 @@ export default function PlanetContent(props) {
             <div className='planet-card container'>
                 <div className='row'>
                     <nav className='planet-card__nav col-12 col-md-6  offset-lg-6 order-md-3'>
-                        <ul className='d-flex flex-row flex-md-column justify-content-between px-2 py-2'>
+                        <ul className='nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2'>
                             <li>
                                 <Button className={pageState === 'overview' ? 'active' : null} size='sm' variant='dark' onClick={showOverviewInfo}>
                                     <span>01</span>
@@ -102,7 +102,7 @@ export default function PlanetContent(props) {
                             </li>
                         </ul>
                     </nav>
-                    <div className='planet-image__container container position-relative col-12 col-lg-6 align-items-center justify-content-center mx-auto'>
+                    <div className='planet-image__container container position-relative col-12 col-lg-6 d-flex align-items-center justify-content-center mx-auto'>
                         <img className='planet img-fluid mx-auto' src={pageState === 'structure' ? props.images.internal : mainImage} />
                         {showSurfaceImage ? <img className='surface-image img-fluid position-absolute z-3' src={surfaceImage} /> : null}
                     </div>
