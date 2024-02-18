@@ -1,8 +1,11 @@
+.planet-card {
+    &__nav {
+        height: 3.75rem;
+        width: 100%;
+        
 
-
-
-
-
-.bgTransparent {
-    background-color: transparent !important;
+        .nav-buttons {
+            height: 100%;
+        }
+    }
 }
