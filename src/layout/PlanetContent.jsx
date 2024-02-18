@@ -77,9 +77,9 @@ export default function PlanetContent(props) {
 
 
         return (
-            <div className='planet-card container'>
+            <div className='planet-card container d-grid'>
                 <nav className='planet-card__nav'>
-                    <ul className='d-flex flex-row justify-content-between px-2 py-2'>
+                    <ul className='d-flex flex-row flex-md-column justify-content-between px-2 py-2'>
                         <li>
                             <Button className={pageState === 'overview' ? 'active' : null} size='sm' variant='dark' onClick={showOverviewInfo}>
                                 <span>01</span>
@@ -107,7 +107,10 @@ export default function PlanetContent(props) {
                 <div className='planet-card__content container text-center text-md-start'>
                     <h2>{name}</h2>
                     <p>{planetText}</p>
-                    <span>Source: <a href={wikiUrl}>Wikipedia</a></span>
+                    <div className='text-center text-md-start'>
+                        <span>Source: <a href={wikiUrl}>Wikipedia</a></span>
+                        <img src='../../public/assets/icon-source.svg' alt='source icon' />
+                    </div>
                 </div>
             </div >
 
