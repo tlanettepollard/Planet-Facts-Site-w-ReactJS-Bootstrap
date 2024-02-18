@@ -2,10 +2,38 @@
     &__nav {
         height: 3.75rem;
         width: 100%;
-        
+
+        @include bp-tablet-up {
+            width: 21.1875rem;
+            height: 9.5rem;
+        }
+
+        @include bp-xl-up {
+            width: 25rem;
+        }
 
         .nav-buttons {
-            height: 100%;
+            @include bp-tablet-up {
+                width: 21.1875rem;
+                height: 9.5rem;
+            }
+
+            @include bp-xl-up {
+                width: 25rem;
+            }
+
+
+            .btn {
+                @include bp-tablet-up {
+                    width: 21.1875rem;
+                    height: auto;
+                    border: 0.0625rem solid $color-dk-gray;
+                }
+
+                @include bp-xl-up {
+                    width: 25rem;
+                }
+            }
         }
     }
 }
