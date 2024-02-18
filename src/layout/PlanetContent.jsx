@@ -25,7 +25,6 @@ export default function PlanetContent(props) {
 
     function MainCard(props) {
         const [pageState, setPageState] = useState('overview');
-        const [navState, setNavState] = useState(props.id);
         const [name, setName] = useState(props.name);
         const [planetText, setPlanetText] = useState(props.overview.content);
         const [mainImage, setMainImage] = useState(props.images.planet);
@@ -37,9 +36,8 @@ export default function PlanetContent(props) {
         useEffect((e) => {
             showOverviewInfo();
             setPageState('overview');
-            setNavState('mercury');
 
-        }, [props.name, props.id])
+        }, [props.name])
 
 
         function showOverviewInfo() {
@@ -103,12 +101,12 @@ export default function PlanetContent(props) {
                     </ul>
                 </nav>
                 <div className='planet-image__container container position-relative d-grid'>
-                    <img className='planet img-fluid mx-auto' src={pageState === 'structure' ? props.images.internal : props.images.planet} />
-                    {showSurfaceImage ? <img className='surface-image img-fluid position-absolute z-3' src={props.images.geology} /> : null}
+                    <img className='planet img-fluid mx-auto' src={pageState === 'structure' ? props.images.internal : mainImage} />
+                    {showSurfaceImage ? <img className='surface-image img-fluid position-absolute z-3' src={surfaceImage} /> : null}
                 </div>
                 <div className='planet-card__content container text-center text-md-start'>
-                    <h2>{props.name}</h2>
-                    <p>{props[pageState].content}</p>
+                    <h2>{name}</h2>
+                    <p>{planetText}</p>
                     <span>Source: <a href={wikiUrl}>Wikipedia</a></span>
                 </div>
             </div >
