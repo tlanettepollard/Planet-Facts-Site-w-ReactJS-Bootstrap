@@ -12,6 +12,7 @@ export default function PlanetContent(props) {
             <MainCard
                 planet={props.planetObj}
                 name={props.planetObj.name}
+                id={props.planetObj.id}
                 overview={props.planetObj.overview}
                 structure={props.planetObj.structure}
                 surface={props.planetObj.geology}
@@ -27,6 +28,7 @@ export default function PlanetContent(props) {
     function MainCard(props) {
         const [pageState, setPageState] = useState('overview');
         const [name, setName] = useState(props.name);
+        const [planetId, setPlanetId] = useState(props.id);
         const [planetText, setPlanetText] = useState(props.overview.content);
         const [mainImage, setMainImage] = useState(props.images.planet);
         const [surfaceImage, setSurfaceImage] = useState(props.images.geology);
@@ -38,12 +40,14 @@ export default function PlanetContent(props) {
             showOverviewInfo();
             setPageState('overview');
 
+
         }, [props.name])
 
 
         function showOverviewInfo() {
             setName(props.name);
             setPageState('overview')
+            setPlanetId(props.id);
             setPlanetText(props.overview.content)
             setMainImage(props.images.planet)
             setWikiUrl(props.overview.source)
@@ -81,29 +85,29 @@ export default function PlanetContent(props) {
             <div className='planet-card container'>
                 <div className='row'>
                     <nav className='planet-card__nav col-12 col-md-6  offset-lg-6 order-md-3'>
-                        <ul className='nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2'>
+                        <ul className='nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container'>
                             <li>
-                                <Button className={pageState === 'overview' ? 'active' : null} size='sm' variant='dark' onClick={showOverviewInfo}>
+                                <Button className={pageState === 'overview' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showOverviewInfo}>
                                     <span>01</span>
                                     Overview
                                 </Button>
                             </li>
                             <li>
-                                <Button className={pageState === 'structure' ? 'active' : null} size='sm' variant='dark' onClick={showStructureInfo}>
+                                <Button className={pageState === 'structure' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showStructureInfo}>
                                     <span>02</span>
                                     Structure
                                 </Button>
                             </li>
                             <li>
-                                <Button className={pageState === 'geology' ? 'active' : null} size='sm' variant='dark' onClick={showSurfaceInfo}>
+                                <Button className={pageState === 'geology' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showSurfaceInfo}>
                                     <span>03</span>
                                     Surface
                                 </Button>
                             </li>
                         </ul>
                     </nav>
-                    <div className='planet-image__container container position-relative col-12 col-lg-6 d-flex align-items-center justify-content-center mx-auto'>
-                        <img className='planet img-fluid mx-auto' src={pageState === 'structure' ? props.images.internal : mainImage} />
+                    <div id={planetId} className='planet-image__container container position-relative col-12 col-lg-6 d-flex align-items-center justify-content-center m-auto p-5 p-xl-0 '>
+                        <img className='planet-image img-fluid d-block mx-auto' src={pageState === 'structure' ? props.images.internal : mainImage} />
                         {showSurfaceImage ? <img className='surface-image img-fluid position-absolute z-3' src={surfaceImage} /> : null}
                     </div>
                     <div className='planet-card__content container text-center text-md-start col-12 col-md-6'>

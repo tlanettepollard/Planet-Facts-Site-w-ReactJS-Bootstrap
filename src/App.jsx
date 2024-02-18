@@ -31,6 +31,7 @@ const App = () => {
 function Planet() {
   const { planetName } = useParams();
   const [planet, setPlanet] = useState(null);
+  
 
   useEffect(() => {
     let planet = data.find((planetObj) => planetObj.name === capitalize(planetName))
@@ -46,7 +47,7 @@ function Planet() {
     return <p>Loading profile...</p>
   }
   return (
-    <PlanetContent planetName={planetName} planetObj={planet} />
+    <PlanetContent planetName={planetName} planetObj={planet}  />
   )
 }
 
