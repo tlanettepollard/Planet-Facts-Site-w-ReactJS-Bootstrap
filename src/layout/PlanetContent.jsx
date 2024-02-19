@@ -110,7 +110,7 @@ export default function PlanetContent(props) {
                         <img className='planet-image img-fluid d-block mx-auto' src={pageState === 'structure' ? props.images.internal : mainImage} />
                         {showSurfaceImage ? <img className='surface-image img-fluid position-absolute z-3' src={surfaceImage} /> : null}
                     </div>
-                    <div className='planet-card__content container text-center text-md-start col-12 col-md-6'>
+                    <div className='planet-card__content container text-center text-md-start col-12 col-md-6 mt-4 mb-4'>
                         <h2>{name}</h2>
                         <p>{planetText}</p>
                         <div className='text-center text-md-start'>

@@ -3,7 +3,7 @@
         height: auto
     }
 
-    // Planet Sizes
+    // Planet Sizes-- Main
     #mercury .planet-image {
         width: 6.9375rem;
         height: 6.9375rem;
@@ -121,6 +121,22 @@
         @include bp-xl-up {
             width: 28.125rem;
             height: 28.125rem;
+        }
+    }
+
+    // Planet Sizes--Surface
+    .surface-image {
+        width: 5rem;
+        height: auto;
+
+        @include bp-tablet-up {
+            width: 5rem;
+            height: 5.8281rem;
+        }
+
+        @include bp-xl-up {
+            width: 10.1875rem;
+            height: 12.4375rem;
         }
     }
 }
