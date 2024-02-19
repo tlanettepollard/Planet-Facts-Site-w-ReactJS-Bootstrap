@@ -1,6 +1,7 @@
 .planet-card {
     .planet-image__container {
-        height: auto
+        height: auto;
+        
     }
 
     // Planet Sizes-- Main
@@ -138,5 +139,9 @@
             width: 10.1875rem;
             height: 12.4375rem;
         }
+    }
+
+    #mercury .surface-image {
+        bottom: -1rem;
     }
 }
