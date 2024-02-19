@@ -12,28 +12,15 @@
             width: 25rem;
         }
 
-        .nav-buttons {
-            @include bp-tablet-up {
-                width: 21.1875rem;
-                height: 9.5rem;
-            }
 
-            @include bp-xl-up {
-                width: 25rem;
-            }
+    }
 
+    .planet-content {
+        .planet-card__nav--tablet {
+            width: 100%;
 
-            .btn {
-                @include bp-tablet-up {
-                    width: 21.1875rem;
-                    height: auto;
-                    border: 0.0625rem solid $color-dk-gray;
-                }
+            
 
-                @include bp-xl-up {
-                    width: 25rem;
-                }
-            }
         }
     }
 }
