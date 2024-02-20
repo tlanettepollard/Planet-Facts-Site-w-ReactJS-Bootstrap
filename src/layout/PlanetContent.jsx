@@ -124,17 +124,17 @@ export default function PlanetContent(props) {
                                 <div className='nav-buttons--tablet d-grid gap-4 mt-3 px-md-3'>
 
                                     <Button className={`text-start ${pageState === 'overview' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showOverviewInfo}>
-                                        <span>01</span>
+                                        <span className='me-4'>01</span>
                                         Overview
                                     </Button>
 
                                     <Button className={`text-start ${pageState === 'structure' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showStructureInfo}>
-                                        <span>02</span>
+                                        <span className='me-4'>02</span>
                                         Structure
                                     </Button>
 
                                     <Button className={`text-start ${pageState === 'geology' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showSurfaceInfo}>
-                                        <span>03</span>
+                                        <span className='me-4'>03</span>
                                         Surface
                                     </Button>
 
