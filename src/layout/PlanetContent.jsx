@@ -85,7 +85,7 @@ export default function PlanetContent(props) {
             <section className='planet-card container d-lg-flex align-items-lg-center'>
 
                 <nav className='planet-card__nav--mobile d-md-none'>
-                    <ul className='nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container'>
+                    <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container ${planetId}`}>
                         <li>
                             <Button className={pageState === 'overview' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showOverviewInfo}>
                                 <span>01</span>
@@ -121,7 +121,7 @@ export default function PlanetContent(props) {
                     </div>
                     <div className='col-md-6'>
                         <div className='planet-card__nav--tablet d-none d-md-block d-md-flex flex-md-column justify-content-md-center'>
-                            <div className='nav-buttons--tablet d-grid gap-4 mt-3 px-md-3'>
+                            <div className={`nav-buttons--tablet d-grid gap-4 mt-3 px-md-3 ${planetId}`}>
 
                                 <Button className={`text-start ${pageState === 'overview' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showOverviewInfo}>
                                     <span className='me-4'>01</span>
