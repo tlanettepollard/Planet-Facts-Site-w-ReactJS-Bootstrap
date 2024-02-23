@@ -1,6 +1,9 @@
 .planet-card {
     width:100%;
-    height: auto;
+    height: 50%;
+    @include bp-tablet-up {
+        height: 70%;
+    }
     &__nav {
         ul {}
     }

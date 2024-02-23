@@ -3,14 +3,14 @@ import React from 'react';
 
 export default function PlanetDataList(props) {
     return (
-        <div className='facts-container container'>
+        <section className='facts-container container'>
             <div className='planet-card__data d-flex flex-column flex-md-row justify-content-md-between container'>
                 <DataListItem name='rotation time' value={props.planet.rotation} />
                 <DataListItem name='revolution time' value={props.planet.revolution} />
                 <DataListItem name='radius' value={props.planet.radius} />
                 <DataListItem name='average temp.' value={props.planet.temperature} />
             </div>
-        </div>
+        </section>
     );
 }
 
