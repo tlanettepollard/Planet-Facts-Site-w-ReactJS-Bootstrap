@@ -12,7 +12,7 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     margin: auto;
     background-image: url('/assets/background-stars.svg');
     background-repeat: repeat;
@@ -26,6 +26,7 @@ li {
     list-style-type: none;
     text-decoration: none;
 }
+
 
 
 // Grid Positioning

@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import data from '/src/data.json';
 import Header from './layout/Header';
 import PlanetContent from './layout/PlanetContent';
+import Footer from './layout/Footer';
+
 
 
 const App = () => {
@@ -22,7 +24,9 @@ const App = () => {
           <Route path='/:planetName' element={<Planet />} />
         </React.Fragment>
       </Routes>
+      <Footer />
     </div>
+
 
   );
 };
@@ -31,7 +35,7 @@ const App = () => {
 function Planet() {
   const { planetName } = useParams();
   const [planet, setPlanet] = useState(null);
-  
+
 
   useEffect(() => {
     let planet = data.find((planetObj) => planetObj.name === capitalize(planetName))
@@ -47,7 +51,8 @@ function Planet() {
     return <p>Loading profile...</p>
   }
   return (
-    <PlanetContent planetName={planetName} planetObj={planet}  />
+  
+    <PlanetContent planetName={planetName} planetObj={planet} />
   )
 }
 

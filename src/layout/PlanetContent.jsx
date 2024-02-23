@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PlanetDataList from './PlanetDataList';
 import { Button } from 'react-bootstrap';
-import { Col, Row, Container } from 'react-bootstrap';
+//import { Col, Row, Container } from 'react-bootstrap';
 
 
 export default function PlanetContent(props) {
@@ -18,7 +18,7 @@ export default function PlanetContent(props) {
                 surface={props.planetObj.geology}
                 images={props.planetObj.images}
             />
-            <div className='data__container container'>
+            <div className='mt-md-5'>
                 <PlanetDataList planet={props.planetObj} />
             </div>
         </>
@@ -82,68 +82,67 @@ export default function PlanetContent(props) {
 
 
         return (
-            <div className='planet-card container'>
-                <div className='row'>
-                    <nav className='planet-card__nav--mobile d-md-none'>
-                        <ul className='nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container'>
-                            <li>
-                                <Button className={pageState === 'overview' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showOverviewInfo}>
-                                    <span>01</span>
+            <section className='planet-card container d-lg-flex align-items-lg-center'>
+
+                <nav className='planet-card__nav--mobile d-md-none'>
+                    <ul className='nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container'>
+                        <li>
+                            <Button className={pageState === 'overview' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showOverviewInfo}>
+                                <span>01</span>
+                                Overview
+                            </Button>
+                        </li>
+                        <li>
+                            <Button className={pageState === 'structure' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showStructureInfo}>
+                                <span>02</span>
+                                Structure
+                            </Button>
+                        </li>
+                        <li>
+                            <Button className={pageState === 'geology' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showSurfaceInfo}>
+                                <span>03</span>
+                                Surface
+                            </Button>
+                        </li>
+                    </ul>
+                </nav>
+                <div id={planetId} className='planet-image__container container position-relative d-flex align-items-center justify-content-center m-auto p-5 p-xl-0'>
+                    <img className='planet-image img-fluid' src={pageState === 'structure' ? props.images.internal : mainImage} />
+                    {showSurfaceImage ? <img className='surface-image img-fluid position-absolute z-3' src={surfaceImage} /> : null}
+                </div>
+                <div className='planet__content container text-center text-md-start mt-5 mb-4 d-md-flex flex-md-row flex-lg-column justify-content-md-between align-items-lg-center'>
+                    <div className='planet__content-info col-md-6 px-md-2'>
+                        <h2>{name}</h2>
+                        <p>{planetText}</p>
+                        <div className='text-center text-md-start'>
+                            <span>Source: <a href={wikiUrl}>Wikipedia</a></span>
+                            <img src='../../public/assets/icon-source.svg' alt='source icon' />
+                        </div>
+                    </div>
+                    <div className='col-md-6'>
+                        <div className='planet-card__nav--tablet d-none d-md-block d-md-flex flex-md-column justify-content-md-center'>
+                            <div className='nav-buttons--tablet d-grid gap-4 mt-3 px-md-3'>
+
+                                <Button className={`text-start ${pageState === 'overview' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showOverviewInfo}>
+                                    <span className='me-4'>01</span>
                                     Overview
                                 </Button>
-                            </li>
-                            <li>
-                                <Button className={pageState === 'structure' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showStructureInfo}>
-                                    <span>02</span>
+
+                                <Button className={`text-start ${pageState === 'structure' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showStructureInfo}>
+                                    <span className='me-4'>02</span>
                                     Structure
                                 </Button>
-                            </li>
-                            <li>
-                                <Button className={pageState === 'geology' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showSurfaceInfo}>
-                                    <span>03</span>
+
+                                <Button className={`text-start ${pageState === 'geology' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showSurfaceInfo}>
+                                    <span className='me-4'>03</span>
                                     Surface
                                 </Button>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div id={planetId} className='planet-image__container container position-relative d-flex align-items-center align-items-xl-stretch justify-content-center m-auto p-5 p-xl-0 mt-xl-5'>
-                        <img className='planet-image img-fluid' src={pageState === 'structure' ? props.images.internal : mainImage} />
-                        {showSurfaceImage ? <img className='surface-image img-fluid position-absolute z-3' src={surfaceImage} /> : null}
-                    </div>
-                    <div className='planet__content container text-center text-md-start mt-5 mb-4 d-md-flex flex-md-row justify-content-md-between'>
-                        <div className='planet__content-info col-md-6 px-md-2'>
-                            <h2>{name}</h2>
-                            <p>{planetText}</p>
-                            <div className='text-center text-md-start'>
-                                <span>Source: <a href={wikiUrl}>Wikipedia</a></span>
-                                <img src='../../public/assets/icon-source.svg' alt='source icon' />
-                            </div>
-                        </div>
-                        <div className='col-md-6'>
-                            <div className='planet-card__nav--tablet d-none d-md-block d-md-flex flex-md-column justify-content-md-center'>
-                                <div className='nav-buttons--tablet d-grid gap-4 mt-3 px-md-3'>
 
-                                    <Button className={`text-start ${pageState === 'overview' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showOverviewInfo}>
-                                        <span className='me-4'>01</span>
-                                        Overview
-                                    </Button>
-
-                                    <Button className={`text-start ${pageState === 'structure' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showStructureInfo}>
-                                        <span className='me-4'>02</span>
-                                        Structure
-                                    </Button>
-
-                                    <Button className={`text-start ${pageState === 'geology' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showSurfaceInfo}>
-                                        <span className='me-4'>03</span>
-                                        Surface
-                                    </Button>
-
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div >
+            </section >
 
         )
     }
