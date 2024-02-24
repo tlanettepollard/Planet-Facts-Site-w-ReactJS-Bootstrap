@@ -10,7 +10,7 @@ export default function Header() {
             <Navbar collapseOnSelect expand="md" className='navbar-dark'>
                 <Container className='d-md-flex flex-md-column flex-lg-row justify-content-lg-between'>
                     <NavbarBrand>
-                        <h1 className='text-uppercase pb-md-3'>The Planets</h1>
+                        <h1 className='text-uppercase pb-md-3 page-title'>The Planets</h1>
                     </NavbarBrand>
                     <NavbarToggle aria-controls='navbarScroll' id='navbarBtn' className='custom-toggler' />
                     <NavbarCollapse id='navbarCollapse' className='flex-lg-grow-0'>
