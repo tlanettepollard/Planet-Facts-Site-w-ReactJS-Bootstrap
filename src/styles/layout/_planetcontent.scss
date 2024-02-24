@@ -1,9 +1,11 @@
 .planet-card {
-    width:100%;
+    width: 100%;
     height: 50%;
+
     @include bp-tablet-up {
         height: 70%;
     }
+
     &__nav {
         ul {}
     }
@@ -23,5 +25,14 @@
         }
     }
 
+    .planet__content {
+        &-info {
+            .planet-name {
+                @include bp-xl-up {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
 
 }
