@@ -3,28 +3,57 @@
         height: 3.75rem;
         width: 100%;
 
-        @include bp-tablet-up {
-            width: 21.1875rem;
-            height: 9.5rem;
-        }
-
-        @include bp-xl-up {
-            width: 25rem;
-        }
-
 
     }
 
     .planet-content {
         .planet-card__nav--tablet {
             width: 100%;
-            .nav-buttons--tablet {
-            
-                
-            }
-            
-            
 
         }
+    }
+}
+
+.mercury>.btnPlanetTablet.active {
+    background-color: $mercury !important;
+}
+
+.venus>.btnPlanetTablet.active {
+    background-color: $venus !important;
+}
+
+.earth>.btnPlanetTablet.active {
+    background-color: $earth !important;
+}
+
+.mars>.btnPlanetTablet.active {
+    background-color: $mars !important;
+}
+
+.jupiter>.btnPlanetTablet.active {
+    background-color: $jupiter !important;
+}
+
+.saturn>.btnPlanetTablet.active {
+    background-color: $saturn !important;
+}
+
+.uranus>.btnPlanetTablet.active {
+    background-color: $uranus !important;
+}
+
+.neptune>.btnPlanetTablet.active {
+    background-color: $neptune !important;
+}
+
+
+
+// Bootstrap Variables Override
+.btn,
+.btn-primary {
+    background-color: transparent !important;
+
+    @include bp-tablet-up {
+        border-color: $color-dk-gray !important;
     }
 }
