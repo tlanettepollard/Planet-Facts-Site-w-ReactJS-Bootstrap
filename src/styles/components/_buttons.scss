@@ -14,6 +14,14 @@
     }
 }
 
+// Mobile Buttons
+.mercury>.borderBottom.active {
+    border-bottom: 0.25rem solid $mercury !important;
+}
+
+
+
+// Tablet Buttons
 .mercury>.btnPlanetTablet.active {
     background-color: $mercury !important;
 }
@@ -52,6 +60,7 @@
 .btn,
 .btn-primary {
     background-color: transparent !important;
+    border: none !important;
 
     @include bp-tablet-up {
         border-color: $color-dk-gray !important;

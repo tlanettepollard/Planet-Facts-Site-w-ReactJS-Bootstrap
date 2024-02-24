@@ -88,19 +88,19 @@ export default function PlanetContent(props) {
                     <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container ${planetId}`}>
                         <li>
                             <Button className={pageState === 'overview' ? 'active' : null} size='sm' type='button' onClick={showOverviewInfo}>
-                                <span>01</span>
+                                <span className='pe-2'>01</span>
                                 Overview
                             </Button>
                         </li>
                         <li>
                             <Button className={pageState === 'structure' ? 'active' : null} size='sm' type='button' onClick={showStructureInfo}>
-                                <span>02</span>
+                                <span className='pe-2'>02</span>
                                 Structure
                             </Button>
                         </li>
                         <li>
-                            <Button className={pageState === 'geology' ? 'active' : null} size='sm' type='button' onClick={showSurfaceInfo}>
-                                <span>03</span>
+                            <Button className={`border-bottom ${pageState === 'geology' ? 'active' : null}`} size='sm' type='button' onClick={showSurfaceInfo}>
+                                <span className='pe-2'>03</span>
                                 Surface
                             </Button>
                         </li>
