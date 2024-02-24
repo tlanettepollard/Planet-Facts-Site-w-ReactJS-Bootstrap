@@ -87,19 +87,19 @@ export default function PlanetContent(props) {
                 <nav className='planet-card__nav--mobile d-md-none'>
                     <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container ${planetId}`}>
                         <li>
-                            <Button className={pageState === 'overview' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showOverviewInfo}>
+                            <Button className={pageState === 'overview' ? 'active' : null} size='sm' type='button' onClick={showOverviewInfo}>
                                 <span>01</span>
                                 Overview
                             </Button>
                         </li>
                         <li>
-                            <Button className={pageState === 'structure' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showStructureInfo}>
+                            <Button className={pageState === 'structure' ? 'active' : null} size='sm' type='button' onClick={showStructureInfo}>
                                 <span>02</span>
                                 Structure
                             </Button>
                         </li>
                         <li>
-                            <Button className={pageState === 'geology' ? 'active' : null} size='sm' variant='dark' type='button' onClick={showSurfaceInfo}>
+                            <Button className={pageState === 'geology' ? 'active' : null} size='sm' type='button' onClick={showSurfaceInfo}>
                                 <span>03</span>
                                 Surface
                             </Button>
@@ -123,17 +123,17 @@ export default function PlanetContent(props) {
                         <div className='planet-card__nav--tablet d-none d-md-block d-md-flex flex-md-column justify-content-md-center'>
                             <div className={`nav-buttons--tablet d-grid gap-4 mt-3 px-md-3 ${planetId}`}>
 
-                                <Button className={`text-start ${pageState === 'overview' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showOverviewInfo}>
+                                <Button className={`text-start btnPlanetTablet ${pageState === 'overview' ? 'active' : null}`} size='lg' type='button' onClick={showOverviewInfo}>
                                     <span className='me-4'>01</span>
                                     Overview
                                 </Button>
 
-                                <Button className={`text-start ${pageState === 'structure' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showStructureInfo}>
+                                <Button className={`text-start btnPlanetTablet ${pageState === 'structure' ? 'active' : null}`} size='lg' type='button' onClick={showStructureInfo}>
                                     <span className='me-4'>02</span>
                                     Structure
                                 </Button>
 
-                                <Button className={`text-start ${pageState === 'geology' ? 'active' : null}`} size='lg' variant='dark' type='button' onClick={showSurfaceInfo}>
+                                <Button className={`text-start btnPlanetTablet ${pageState === 'geology' ? 'active' : null}`} size='lg' type='button' onClick={showSurfaceInfo}>
                                     <span className='me-4'>03</span>
                                     Surface
                                 </Button>
