@@ -85,21 +85,21 @@ export default function PlanetContent(props) {
             <section className='planet-card container d-lg-flex align-items-lg-center'>
 
                 <nav className='planet-card__nav--mobile d-md-none'>
-                    <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container ${planetId}`}>
+                    <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container borderBottom ${planetId}`}>
                         <li>
-                            <Button className={pageState === 'overview' ? 'active' : null} size='sm' type='button' onClick={showOverviewInfo}>
+                            <Button className={`btnPlanetMobile ${pageState === 'overview' ? 'active' : null}`} size='sm' type='button' onClick={showOverviewInfo}>
                                 <span className='pe-2'>01</span>
                                 Overview
                             </Button>
                         </li>
                         <li>
-                            <Button className={pageState === 'structure' ? 'active' : null} size='sm' type='button' onClick={showStructureInfo}>
+                            <Button className={`btnPlanetMobile ${pageState === 'structure' ? 'active' : null}`} size='sm' type='button' onClick={showStructureInfo}>
                                 <span className='pe-2'>02</span>
                                 Structure
                             </Button>
                         </li>
                         <li>
-                            <Button className={`border-bottom ${pageState === 'geology' ? 'active' : null}`} size='sm' type='button' onClick={showSurfaceInfo}>
+                            <Button className={`btnPlanetMobile ${pageState === 'geology' ? 'active' : null}`} size='sm' type='button' onClick={showSurfaceInfo}>
                                 <span className='pe-2'>03</span>
                                 Surface
                             </Button>
@@ -116,7 +116,7 @@ export default function PlanetContent(props) {
                         <p className='planet-info py-3'>{planetText}</p>
                         <div className='text-center text-md-start'>
                             <span>Source: <a href={wikiUrl}>Wikipedia</a></span>
-                            <img src='../../public/assets/icon-source.svg' alt='source icon' />
+                            <img src='/assets/icon-source.svg' alt='source icon' />
                         </div>
                     </div>
                     <div className='col-md-6 col-xl-8'>
