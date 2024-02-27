@@ -7,6 +7,8 @@
             border-bottom: 1px solid $color-dk-gray;
         }
 
+
+
     }
 
     .planet-content {
@@ -18,53 +20,55 @@
 }
 
 // Mobile Buttons
-.mercury>.btnPlanetMobile.active {
-    border-bottom: 4px solid $mercury;
+.planet-card__nav--mobile {
+    .mercury .btn-primary.active {
+        border-color: $mercury !important;
+    }
 }
-
 
 
 // Tablet Buttons
-.mercury>.btnPlanetTablet.active {
-    background-color: $mercury !important;
+.planet-card__nav--tablet {
+    .mercury>.btnPlanetTablet.active {
+        background-color: $mercury !important;
+    }
+
+    .venus>.btnPlanetTablet.active {
+        background-color: $venus !important;
+    }
+
+    .earth>.btnPlanetTablet.active {
+        background-color: $earth !important;
+    }
+
+    .mars>.btnPlanetTablet.active {
+        background-color: $mars !important;
+    }
+
+    .jupiter>.btnPlanetTablet.active {
+        background-color: $jupiter !important;
+    }
+
+    .saturn>.btnPlanetTablet.active {
+        background-color: $saturn !important;
+    }
+
+    .uranus>.btnPlanetTablet.active {
+        background-color: $uranus !important;
+    }
+
+    .neptune>.btnPlanetTablet.active {
+        background-color: $neptune !important;
+    }
+
 }
-
-.venus>.btnPlanetTablet.active {
-    background-color: $venus !important;
-}
-
-.earth>.btnPlanetTablet.active {
-    background-color: $earth !important;
-}
-
-.mars>.btnPlanetTablet.active {
-    background-color: $mars !important;
-}
-
-.jupiter>.btnPlanetTablet.active {
-    background-color: $jupiter !important;
-}
-
-.saturn>.btnPlanetTablet.active {
-    background-color: $saturn !important;
-}
-
-.uranus>.btnPlanetTablet.active {
-    background-color: $uranus !important;
-}
-
-.neptune>.btnPlanetTablet.active {
-    background-color: $neptune !important;
-}
-
-
 
 // Bootstrap Variables Override
 .btn,
 .btn-primary {
     background-color: transparent !important;
     border: none !important;
-    //border-bottom: 4px solid $color-dk-gray !important;
+    border-bottom: 4px solid transparent !important;
 
 
     @include bp-tablet-up {
