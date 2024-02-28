@@ -4,11 +4,13 @@ import React from 'react';
 export default function PlanetDataList(props) {
     return (
         <section className='facts-container container'>
-            <div className='planet-card__data d-flex flex-column flex-md-row justify-content-md-between container'>
-                <DataListItem name='rotation time' value={props.planet.rotation} />
-                <DataListItem name='revolution time' value={props.planet.revolution} />
-                <DataListItem name='radius' value={props.planet.radius} />
-                <DataListItem name='average temp.' value={props.planet.temperature} />
+            <div className='planet-card__data'>
+                <div className="">
+                    <DataListItem name='rotation time' value={props.planet.rotation} className='' />
+                    <DataListItem name='revolution time' value={props.planet.revolution} className='' />
+                    <DataListItem name='radius' value={props.planet.radius} className='' />
+                    <DataListItem name='average temp.' value={props.planet.temperature} className='' />
+                </div>
             </div>
         </section>
     );
@@ -18,9 +20,9 @@ export default function PlanetDataList(props) {
 
 function DataListItem(props) {
     return (
-        <div className='facts d-flex flex-row justify-content-between align-items-center flex-md-column justify-content-md-center align-items-md-start bg-transparent container'>
-            <p className='fact-title'>{props.name}</p>
-            <p className='fact-value'>{props.value}</p>
+        <div className='facts container d-flex flex-md-column align-items-center align-items-md-start justify-content-between justify-content-md-even bg-transparent border border-secondary'>
+            <p className='fact-title text-uppercase text-secondary'>{props.name}</p>
+            <p className='fact-value text-uppercase'>{props.value}</p>
         </div>
     );
 }
