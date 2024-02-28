@@ -66,3 +66,16 @@ body {
 .planet-page-link {
     color: $main-light !important;
 }
+
+.fact-title {
+    font-size: .5rem;
+}
+
+.fact-value {
+    font-family: 'Antonio';
+    font-size: 1.75rem;
+    letter-spacing: -0.75px;
+    @include bp-tablet-up {
+        font-size: 1.5rem;
+    }
+}
