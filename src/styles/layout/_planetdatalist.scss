@@ -1,0 +1,12 @@
+.facts-container {
+    .planet-card__data {
+
+        .facts {
+            @include bp-tablet-up {
+                width: 15.9375rem;
+                height: 8rem;
+            }
+        }
+    }
+}
+
