@@ -1,18 +1,28 @@
 import React from 'react';
-
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 export default function PlanetDataList(props) {
     return (
-        <section className='facts-container container'>
+        <Container className='facts-container container'>
             <div className='planet-card__data'>
-                <div className="">
-                    <DataListItem name='rotation time' value={props.planet.rotation} className='' />
-                    <DataListItem name='revolution time' value={props.planet.revolution} className='' />
-                    <DataListItem name='radius' value={props.planet.radius} className='' />
-                    <DataListItem name='average temp.' value={props.planet.temperature} className='' />
-                </div>
+                <Row className="">
+                    <Col sm={12} md={3}>
+                        <DataListItem name='rotation time' value={props.planet.rotation} className='' />
+                    </Col>
+                    <Col sm={12} md={3}>
+                        <DataListItem name='revolution time' value={props.planet.revolution} className='' />
+                    </Col>
+                    <Col sm={12} md={3}>
+                        <DataListItem name='radius' value={props.planet.radius} className='' />
+                    </Col>
+                    <Col sm={12} md={3}>
+                        <DataListItem name='average temp.' value={props.planet.temperature} className='' />
+                    </Col>
+                </Row>
             </div>
-        </section>
+        </Container>
     );
 }
 
