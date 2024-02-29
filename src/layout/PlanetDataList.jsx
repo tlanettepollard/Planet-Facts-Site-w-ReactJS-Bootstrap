@@ -5,19 +5,19 @@ import Col from 'react-bootstrap/Col'
 
 export default function PlanetDataList(props) {
     return (
-        <Container className='facts-container container'>
+        <Container className='facts-container'>
             <div className='planet-card__data'>
                 <Row className="">
-                    <Col sm={12} md={3}>
+                    <Col sm={12} md={3} lg={3}>
                         <DataListItem name='rotation time' value={props.planet.rotation} className='' />
                     </Col>
-                    <Col sm={12} md={3}>
+                    <Col sm={12} md={3} lg={3}>
                         <DataListItem name='revolution time' value={props.planet.revolution} className='' />
                     </Col>
-                    <Col sm={12} md={3}>
+                    <Col sm={12} md={3} lg={3}>
                         <DataListItem name='radius' value={props.planet.radius} className='' />
                     </Col>
-                    <Col sm={12} md={3}>
+                    <Col sm={12} md={3} lg={3}>
                         <DataListItem name='average temp.' value={props.planet.temperature} className='' />
                     </Col>
                 </Row>
@@ -30,7 +30,7 @@ export default function PlanetDataList(props) {
 
 function DataListItem(props) {
     return (
-        <div className='facts container d-flex flex-md-column align-items-center align-items-md-start justify-content-between justify-content-md-even bg-transparent border border-secondary'>
+        <div className='facts container d-flex flex-md-column align-items-center align-items-md-start justify-content-between justify-content-md-center bg-transparent border border-secondary'>
             <p className='fact-title text-uppercase text-secondary'>{props.name}</p>
             <p className='fact-value text-uppercase'>{props.value}</p>
         </div>
