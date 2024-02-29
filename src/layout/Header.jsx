@@ -7,8 +7,8 @@ export default function Header() {
 
     return (
         <header className='page-header container'>
-            <Navbar collapseOnSelect expand="md" className='navbar-dark'>
-                <Container className='d-md-flex flex-md-column flex-lg-row justify-content-lg-between'>
+            <Navbar collapseOnSelect expand="md" className='navbar-dark py-lg-5'>
+                <Container className='d-md-flex flex-md-column flex-xl-row justify-content-lg-between'>
                     <NavbarBrand>
                         <h1 className='text-uppercase pb-md-3 page-title'>The Planets</h1>
                     </NavbarBrand>
