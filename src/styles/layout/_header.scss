@@ -3,7 +3,11 @@
         .container {
             width: 100%;
 
-            #navbarNav {}
+            #navbarNav {
+                @include bp-tablet-up {
+                    width: 100%;
+                }
+            }
         }
     }
 }

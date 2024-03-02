@@ -111,7 +111,7 @@ export default function PlanetContent(props) {
                     {showSurfaceImage ? <img className='surface-image img-fluid position-absolute z-3' src={surfaceImage} /> : null}
                 </div>
                 <div className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 d-md-flex flex-md-row flex-lg-column justify-content-md-between align-items-lg-center'>
-                    <div className='planet__content-info col-md-6 col-lg-10 me-md-2 mb-lg-5'>
+                    <div className='planet__content-info col-md-6 col-lg-8 me-md-2 mb-lg-5'>
                         <h2 className='planet-name heading-2 py-2'>{name}</h2>
                         <p className='planet-info py-3'>{planetText}</p>
                         <div className='text-center text-md-start'>
@@ -119,7 +119,7 @@ export default function PlanetContent(props) {
                             <img src='/assets/icon-source.svg' alt='source icon' />
                         </div>
                     </div>
-                    <div className='col-md-6 col-lg-10'>
+                    <div className='col-md-6 col-lg-8'>
                         <div className='planet-card__nav--tablet d-none d-md-block d-md-flex flex-md-column justify-content-md-center py-md-3'>
                             <div className={`nav-buttons--tablet d-grid gap-4 mt-3 ms-md-2 ${planetId}`}>
 
