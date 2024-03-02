@@ -27,6 +27,35 @@
                         border-top: .1875rem solid $venus !important;
                     }
 
+                    #earth:hover,
+                    #earth:focus {
+                        border-top: .1875rem solid $earth !important;
+                    }
+
+                    #mars:hover,
+                    #mars:focus {
+                        border-top: .1875rem solid $mars !important;
+                    }
+
+                    #jupiter:hover,
+                    #jupiter:focus {
+                        border-top: .1875rem solid $jupiter !important;
+                    }
+
+                    #saturn:hover,
+                    #saturn:focus {
+                        border-top: .1875rem solid $saturn !important;
+                    }
+
+                    #uranus:hover,
+                    #uranus:focus {
+                        border-top: .1875rem solid $uranus !important;
+                    }
+
+                    #neptune:hover,
+                    #neptune:focus {
+                        border-top: .1875rem solid $neptune!important;
+                    }
 
                 }
             }
