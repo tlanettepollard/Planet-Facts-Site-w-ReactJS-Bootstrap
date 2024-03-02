@@ -7,14 +7,14 @@ export default function Header() {
 
     return (
         <header className='page-header container'>
-            <Navbar collapseOnSelect expand="md" className='navbar-dark py-lg-5 border-bottom border-secondary'>
+            <Navbar collapseOnSelect expand="md" className='navbar-dark pb-md-5 pt-lg-5 pb-lg-2 borderBottom'>
                 <Container className='d-md-flex flex-md-column flex-xl-row justify-content-lg-between'>
                     <NavbarBrand>
-                        <h1 className='text-uppercase pb-md-3 page-title'>The Planets</h1>
+                        <h1 className='text-uppercase pb-md-3 pt-lg-3 page-title'>The Planets</h1>
                     </NavbarBrand>
                     <NavbarToggle aria-controls='navbarScroll' id='navbarBtn' className='custom-toggler' />
                     <NavbarCollapse id='navbarCollapse' className='flex-lg-grow-0'>
-                        <Nav className='me-auto d-md-inline-flex justify-content-md-center align-items-md-start gap-4 gap-md-5 gap-lg-4 pe-md-2 pe-lg-0' id='navbarNav'>
+                        <Nav className='me-auto d-md-inline-flex justify-content-md-center align-items-md-start gap-4 gap-md-3 gap-lg-4 pe-md-2 pe-lg-0' id='navbarNav'>
                             <NavLink to='/mercury' id='mercury' className='planet-page-link text-uppercase link-underline link-underline-opacity-0 d-inline-flex justify-content-between align-items-center border-bottom border-secondary border-1 border-opacity-25'>
                                 <div>
                                     <img src="/assets/mercury-circle.png" className='me-4 d-md-none' alt="" />

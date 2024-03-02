@@ -4,13 +4,45 @@
             width: 100%;
 
             #navbarNav {
+
+                .planet-page-link {
+                    @include bp-lg-up {
+                        height: 5rem;
+                    }
+                }
+
                 @include bp-tablet-up {
                     width: 100%;
                 }
+
+                @include bp-lg-up {
+
+                    #mercury:hover,
+                    #mercury:focus {
+                        border-top: .1875rem solid $mercury !important;
+                    }
+
+                    #venus:hover,
+                    #venus:focus {
+                        border-top: .1875rem solid $venus !important;
+                    }
+
+
+                }
             }
+
+        }
+    }
+
+    .borderBottom {
+        @include bp-tablet-up {
+            border-bottom: 1px solid $color-lt-gray;
         }
     }
 }
+
+
+
 
 
 
