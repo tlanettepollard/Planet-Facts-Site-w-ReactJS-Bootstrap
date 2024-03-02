@@ -121,7 +121,7 @@ export default function PlanetContent(props) {
                     </div>
                     <div className='col-md-6 col-lg-6 col-xl-8'>
                         <div className='planet-card__nav--tablet d-none d-md-block d-md-flex flex-md-column justify-content-md-center py-md-3'>
-                            <div className={`nav-buttons--tablet d-grid gap-4 mt-3 ms-md-2 ${planetId}`}>
+                            <div className={`nav-buttons--tablet d-grid gap-4 mt-3 ms-md-2 ms-xl-0 ${planetId}`}>
 
                                 <Button className={`text-start d-md-flex justify-content-md-start btnPlanetTablet ${pageState === 'overview' ? 'active' : null}`} size='lg' type='button' onClick={showOverviewInfo}>
                                     <p className='m-2'>01</p>
