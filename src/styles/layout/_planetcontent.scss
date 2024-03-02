@@ -27,6 +27,7 @@
 
     .planet__content {
         &-info {
+            
             .planet-name {
                 @include bp-xl-up {
                     font-size: 5rem;
