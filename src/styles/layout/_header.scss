@@ -8,6 +8,7 @@
                 .planet-page-link {
                     @include bp-lg-up {
                         height: 5rem;
+                        border-bottom: none !important;
                     }
                 }
 
@@ -81,7 +82,7 @@
 
     .borderBottom {
         @include bp-tablet-up {
-            border-bottom: 1px solid $color-lt-gray;
+            border-bottom: 1px solid $color-dk-gray;
         }
     }
 }

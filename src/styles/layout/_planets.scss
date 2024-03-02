@@ -1,7 +1,7 @@
 .planet-card {
     .planet-image__container {
         height: auto;
-        
+
     }
 
     // Planet Sizes-- Main
@@ -127,17 +127,18 @@
 
     // Planet Sizes--Surface
     .surface-image {
-        width: 5rem;
+        width: 3.125rem;
         height: auto;
 
         @include bp-tablet-up {
             width: 5rem;
-            height: 5.8281rem;
+            height: auto;
         }
 
-        @include bp-xl-up {
+        @include bp-lg-up {
             width: 10.1875rem;
-            height: 12.4375rem;
+            height: auto;
+            
         }
     }
 
