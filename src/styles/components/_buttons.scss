@@ -2,9 +2,14 @@
     &__nav--mobile {
         height: 3.75rem;
         width: 100%;
-
+        .borderTop {
+            border-top: 1px solid $color-dk-gray;
+        }
         .borderBottom {
             border-bottom: 1px solid $color-dk-gray;
+        }
+        .nav-buttons {
+            height: 3rem;
         }
 
 

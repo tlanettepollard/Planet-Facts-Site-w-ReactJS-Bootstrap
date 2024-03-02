@@ -18,7 +18,7 @@ export default function PlanetContent(props) {
                 surface={props.planetObj.geology}
                 images={props.planetObj.images}
             />
-            <div className='mt-md-5 mt-lg-5'>
+            <div className='mt-md-5 mt-lg-5 mt-xl-2'>
                 <PlanetDataList planet={props.planetObj} />
             </div>
         </>
@@ -82,7 +82,7 @@ export default function PlanetContent(props) {
 
 
         return (
-            <section className='planet-card container d-lg-flex align-items-lg-center pb-2 py-lg-5'>
+            <section className='planet-card container d-lg-flex flex-lg-column flex-xl-row align-items-lg-center pb-2 mt-lg-5 mt-xl-0'>
 
                 <nav className='planet-card__nav--mobile d-md-none'>
                     <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container borderBottom ${planetId}`}>
@@ -110,8 +110,8 @@ export default function PlanetContent(props) {
                     <img className='planet-image' src={pageState === 'structure' ? props.images.internal : mainImage} />
                     {showSurfaceImage ? <img className='surface-image img-fluid position-absolute z-3' src={surfaceImage} /> : null}
                 </div>
-                <div className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 d-md-flex flex-md-row flex-lg-column justify-content-md-between align-items-lg-center'>
-                    <div className='planet__content-info col-md-6 col-lg-8 me-md-2 mb-lg-5'>
+                <div className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 d-md-flex flex-md-row flex-xl-column justify-content-md-between align-items-lg-center'>
+                    <div className='planet__content-info col-md-6 col-lg-6 col-xl-8 me-md-2 mb-lg-5 mb-xl-0'>
                         <h2 className='planet-name heading-2 py-2'>{name}</h2>
                         <p className='planet-info py-3'>{planetText}</p>
                         <div className='text-center text-md-start'>
@@ -119,7 +119,7 @@ export default function PlanetContent(props) {
                             <img src='/assets/icon-source.svg' alt='source icon' />
                         </div>
                     </div>
-                    <div className='col-md-6 col-lg-8'>
+                    <div className='col-md-6 col-lg-6 col-xl-8'>
                         <div className='planet-card__nav--tablet d-none d-md-block d-md-flex flex-md-column justify-content-md-center py-md-3'>
                             <div className={`nav-buttons--tablet d-grid gap-4 mt-3 ms-md-2 ${planetId}`}>
 
