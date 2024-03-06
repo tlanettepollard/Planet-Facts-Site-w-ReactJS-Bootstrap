@@ -153,4 +153,37 @@
         }
     }
 
+    #venus .surface-image {
+        bottom: 10%;
+
+        @include bp-lg-up {
+            bottom: -15%;
+        }
+    }
+
+    #earth .surface-image {
+        bottom: 10%;
+
+        @include bp-lg-up {
+            bottom: -15%;
+        }
+    }
+
+    #mars .surface-image {
+        bottom: 10%;
+
+        @include bp-lg-up {
+            bottom: -15%;
+        }
+
+    }
+
+    #jupiter .surface-image {}
+
+    #saturn .surface-image {}
+
+    #uranus .surface-image {}
+
+    #neptune .surface-image {}
+
 }
