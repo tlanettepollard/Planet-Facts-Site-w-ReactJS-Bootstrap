@@ -19,7 +19,7 @@ export default function PlanetContent(props) {
                 surface={props.planetObj.geology}
                 images={props.planetObj.images}
             />
-            <div className='mt-md-5 mt-lg-5 mt-xl-2'>
+            <div className='mt-md-5 mt-lg-5 mt-xl-5'>
                 <PlanetDataList planet={props.planetObj} />
             </div>
         </>
