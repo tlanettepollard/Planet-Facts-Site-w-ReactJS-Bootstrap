@@ -111,8 +111,8 @@ export default function PlanetContent(props) {
                     <Image className='planet-image' src={pageState === 'structure' ? props.images.internal : mainImage} fluid />
                     {showSurfaceImage ? <Image className='surface-image position-absolute  z-0' src={surfaceImage} fluid /> : null}
                 </div>
-                <div className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 d-md-flex flex-md-row flex-xl-column justify-content-md-between align-items-lg-center'>
-                    <div className='planet__content-info col-md-6 col-lg-6 col-xl-8 me-md-2 mb-lg-5 mb-xl-0'>
+                <div className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 d-md-flex flex-md-row flex-xl-column justify-content-md-between align-content-md-baseline align-items-lg-center'>
+                    <div className='planet__content-info col-md-6 col-lg-6 col-xl-8 me-md-2 me-lg-0 mb-xl-0'>
                         <h2 className='planet-name heading-2 py-2'>{name}</h2>
                         <p className='planet-info py-3'>{planetText}</p>
                         <div className='text-center text-md-start'>
