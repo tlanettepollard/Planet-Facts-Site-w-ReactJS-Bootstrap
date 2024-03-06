@@ -178,12 +178,42 @@
 
     }
 
-    #jupiter .surface-image {}
+    #jupiter .surface-image {
+        bottom: 10%;
 
-    #saturn .surface-image {}
+        @include bp-lg-up {
+            bottom: 0%;
+        }
+    }
 
-    #uranus .surface-image {}
+    #saturn .surface-image {
+        bottom: 25%;
 
-    #neptune .surface-image {}
+        @include bp-lg-up {
+            bottom: 25%;
+        }
+
+        @include bp-xl-up {
+            bottom: 10%;
+        }
+
+
+    }
+
+    #uranus .surface-image {
+        bottom: 10%;
+
+        @include bp-lg-up {
+            bottom: -15%;
+        }
+    }
+
+    #neptune .surface-image {
+        bottom: 10%;
+
+        @include bp-lg-up {
+            bottom: -15%;
+        }
+    }
 
 }
