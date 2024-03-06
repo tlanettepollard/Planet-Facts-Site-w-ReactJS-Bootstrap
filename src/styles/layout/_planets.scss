@@ -127,22 +127,30 @@
 
     // Planet Sizes--Surface
     .surface-image {
-        width: 3.125rem;
+        width: 3.125rem !important;
         height: auto;
 
         @include bp-tablet-up {
-            width: 5rem;
+            width: 5rem !important;
             height: auto;
         }
 
         @include bp-lg-up {
-            width: 10.1875rem;
+            width: 10.1875rem !important;
             height: auto;
-            
+
+
         }
+
+
     }
 
     #mercury .surface-image {
-        bottom: -1rem;
+        bottom: 5%;
+
+        @include bp-lg-up {
+            bottom: -30%;
+        }
     }
+
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PlanetDataList from './PlanetDataList';
 import { Button } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 //import { Col, Row, Container } from 'react-bootstrap';
 
 
@@ -107,8 +108,8 @@ export default function PlanetContent(props) {
                     </ul>
                 </nav>
                 <div id={planetId} className='planet-image__container container position-relative d-flex align-items-center justify-content-center m-auto p-5 p-xl-0'>
-                    <img className='planet-image' src={pageState === 'structure' ? props.images.internal : mainImage} />
-                    {showSurfaceImage ? <img className='surface-image img-fluid position-absolute z-3' src={surfaceImage} /> : null}
+                    <Image className='planet-image' src={pageState === 'structure' ? props.images.internal : mainImage} fluid />
+                    {showSurfaceImage ? <Image className='surface-image position-absolute  z-0' src={surfaceImage} fluid /> : null}
                 </div>
                 <div className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 d-md-flex flex-md-row flex-xl-column justify-content-md-between align-items-lg-center'>
                     <div className='planet__content-info col-md-6 col-lg-6 col-xl-8 me-md-2 mb-lg-5 mb-xl-0'>
