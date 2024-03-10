@@ -18,7 +18,7 @@
 
 // XL screens 1400px up
 @mixin bp-xl-up {
-    @media only screens and (min-width: $bp-xl) {
+    @media only screen and (min-width: $bp-xl) {
         @content;
     }
 }
