@@ -97,7 +97,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px solid white;
 }
 
 body {
@@ -343,66 +342,146 @@ body {
   }
 }
 
-.page-header .navbar .container {
+.page-header .navbar .container-fluid, .page-header .navbar .container-xxl, .page-header .navbar .container-xl, .page-header .navbar .container-lg, .page-header .navbar .container-md, .page-header .navbar .container-sm {
   width: 100%;
 }
 @media only screen and (min-width: 1200px) {
-  .page-header .navbar .container #navbarNav .planet-page-link {
+  .page-header .navbar .container-fluid #navbarNav .planet-page-link, .page-header .navbar .container-xxl #navbarNav .planet-page-link, .page-header .navbar .container-xl #navbarNav .planet-page-link, .page-header .navbar .container-lg #navbarNav .planet-page-link, .page-header .navbar .container-md #navbarNav .planet-page-link, .page-header .navbar .container-sm #navbarNav .planet-page-link {
     height: 5rem;
     border-bottom: none !important;
   }
 }
 @media only screen and (min-width: 768px) {
-  .page-header .navbar .container #navbarNav {
+  .page-header .navbar .container-fluid #navbarNav, .page-header .navbar .container-xxl #navbarNav, .page-header .navbar .container-xl #navbarNav, .page-header .navbar .container-lg #navbarNav, .page-header .navbar .container-md #navbarNav, .page-header .navbar .container-sm #navbarNav {
     width: 100%;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .page-header .navbar .container #navbarNav #mercury:hover,
-  .page-header .navbar .container #navbarNav #mercury:focus,
-  .page-header .navbar .container #navbarNav #mercury.active {
+  .page-header .navbar .container-fluid #navbarNav #mercury:hover, .page-header .navbar .container-xxl #navbarNav #mercury:hover, .page-header .navbar .container-xl #navbarNav #mercury:hover, .page-header .navbar .container-lg #navbarNav #mercury:hover, .page-header .navbar .container-md #navbarNav #mercury:hover, .page-header .navbar .container-sm #navbarNav #mercury:hover,
+  .page-header .navbar .container-fluid #navbarNav #mercury:focus,
+  .page-header .navbar .container-xxl #navbarNav #mercury:focus,
+  .page-header .navbar .container-xl #navbarNav #mercury:focus,
+  .page-header .navbar .container-lg #navbarNav #mercury:focus,
+  .page-header .navbar .container-md #navbarNav #mercury:focus,
+  .page-header .navbar .container-sm #navbarNav #mercury:focus,
+  .page-header .navbar .container-fluid #navbarNav #mercury.active,
+  .page-header .navbar .container-xxl #navbarNav #mercury.active,
+  .page-header .navbar .container-xl #navbarNav #mercury.active,
+  .page-header .navbar .container-lg #navbarNav #mercury.active,
+  .page-header .navbar .container-md #navbarNav #mercury.active,
+  .page-header .navbar .container-sm #navbarNav #mercury.active {
     border-top: 0.1875rem solid #419ebb !important;
     font-weight: 700 !important;
   }
-  .page-header .navbar .container #navbarNav #venus:hover,
-  .page-header .navbar .container #navbarNav #venus:focus,
-  .page-header .navbar .container #navbarNav #venus.active {
+  .page-header .navbar .container-fluid #navbarNav #venus:hover, .page-header .navbar .container-xxl #navbarNav #venus:hover, .page-header .navbar .container-xl #navbarNav #venus:hover, .page-header .navbar .container-lg #navbarNav #venus:hover, .page-header .navbar .container-md #navbarNav #venus:hover, .page-header .navbar .container-sm #navbarNav #venus:hover,
+  .page-header .navbar .container-fluid #navbarNav #venus:focus,
+  .page-header .navbar .container-xxl #navbarNav #venus:focus,
+  .page-header .navbar .container-xl #navbarNav #venus:focus,
+  .page-header .navbar .container-lg #navbarNav #venus:focus,
+  .page-header .navbar .container-md #navbarNav #venus:focus,
+  .page-header .navbar .container-sm #navbarNav #venus:focus,
+  .page-header .navbar .container-fluid #navbarNav #venus.active,
+  .page-header .navbar .container-xxl #navbarNav #venus.active,
+  .page-header .navbar .container-xl #navbarNav #venus.active,
+  .page-header .navbar .container-lg #navbarNav #venus.active,
+  .page-header .navbar .container-md #navbarNav #venus.active,
+  .page-header .navbar .container-sm #navbarNav #venus.active {
     border-top: 0.1875rem solid #eda249 !important;
     font-weight: 700 !important;
   }
-  .page-header .navbar .container #navbarNav #earth:hover,
-  .page-header .navbar .container #navbarNav #earth:focus,
-  .page-header .navbar .container #navbarNav #earth.active {
+  .page-header .navbar .container-fluid #navbarNav #earth:hover, .page-header .navbar .container-xxl #navbarNav #earth:hover, .page-header .navbar .container-xl #navbarNav #earth:hover, .page-header .navbar .container-lg #navbarNav #earth:hover, .page-header .navbar .container-md #navbarNav #earth:hover, .page-header .navbar .container-sm #navbarNav #earth:hover,
+  .page-header .navbar .container-fluid #navbarNav #earth:focus,
+  .page-header .navbar .container-xxl #navbarNav #earth:focus,
+  .page-header .navbar .container-xl #navbarNav #earth:focus,
+  .page-header .navbar .container-lg #navbarNav #earth:focus,
+  .page-header .navbar .container-md #navbarNav #earth:focus,
+  .page-header .navbar .container-sm #navbarNav #earth:focus,
+  .page-header .navbar .container-fluid #navbarNav #earth.active,
+  .page-header .navbar .container-xxl #navbarNav #earth.active,
+  .page-header .navbar .container-xl #navbarNav #earth.active,
+  .page-header .navbar .container-lg #navbarNav #earth.active,
+  .page-header .navbar .container-md #navbarNav #earth.active,
+  .page-header .navbar .container-sm #navbarNav #earth.active {
     border-top: 0.1875rem solid #6f2ed6 !important;
     font-weight: 700 !important;
   }
-  .page-header .navbar .container #navbarNav #mars:hover,
-  .page-header .navbar .container #navbarNav #mars:focus,
-  .page-header .navbar .container #navbarNav #mars.active {
+  .page-header .navbar .container-fluid #navbarNav #mars:hover, .page-header .navbar .container-xxl #navbarNav #mars:hover, .page-header .navbar .container-xl #navbarNav #mars:hover, .page-header .navbar .container-lg #navbarNav #mars:hover, .page-header .navbar .container-md #navbarNav #mars:hover, .page-header .navbar .container-sm #navbarNav #mars:hover,
+  .page-header .navbar .container-fluid #navbarNav #mars:focus,
+  .page-header .navbar .container-xxl #navbarNav #mars:focus,
+  .page-header .navbar .container-xl #navbarNav #mars:focus,
+  .page-header .navbar .container-lg #navbarNav #mars:focus,
+  .page-header .navbar .container-md #navbarNav #mars:focus,
+  .page-header .navbar .container-sm #navbarNav #mars:focus,
+  .page-header .navbar .container-fluid #navbarNav #mars.active,
+  .page-header .navbar .container-xxl #navbarNav #mars.active,
+  .page-header .navbar .container-xl #navbarNav #mars.active,
+  .page-header .navbar .container-lg #navbarNav #mars.active,
+  .page-header .navbar .container-md #navbarNav #mars.active,
+  .page-header .navbar .container-sm #navbarNav #mars.active {
     border-top: 0.1875rem solid #d14c32 !important;
     font-weight: 700 !important;
   }
-  .page-header .navbar .container #navbarNav #jupiter:hover,
-  .page-header .navbar .container #navbarNav #jupiter:focus,
-  .page-header .navbar .container #navbarNav #jupiter.active {
+  .page-header .navbar .container-fluid #navbarNav #jupiter:hover, .page-header .navbar .container-xxl #navbarNav #jupiter:hover, .page-header .navbar .container-xl #navbarNav #jupiter:hover, .page-header .navbar .container-lg #navbarNav #jupiter:hover, .page-header .navbar .container-md #navbarNav #jupiter:hover, .page-header .navbar .container-sm #navbarNav #jupiter:hover,
+  .page-header .navbar .container-fluid #navbarNav #jupiter:focus,
+  .page-header .navbar .container-xxl #navbarNav #jupiter:focus,
+  .page-header .navbar .container-xl #navbarNav #jupiter:focus,
+  .page-header .navbar .container-lg #navbarNav #jupiter:focus,
+  .page-header .navbar .container-md #navbarNav #jupiter:focus,
+  .page-header .navbar .container-sm #navbarNav #jupiter:focus,
+  .page-header .navbar .container-fluid #navbarNav #jupiter.active,
+  .page-header .navbar .container-xxl #navbarNav #jupiter.active,
+  .page-header .navbar .container-xl #navbarNav #jupiter.active,
+  .page-header .navbar .container-lg #navbarNav #jupiter.active,
+  .page-header .navbar .container-md #navbarNav #jupiter.active,
+  .page-header .navbar .container-sm #navbarNav #jupiter.active {
     border-top: 0.1875rem solid #d83a34 !important;
     font-weight: 700 !important;
   }
-  .page-header .navbar .container #navbarNav #saturn:hover,
-  .page-header .navbar .container #navbarNav #saturn:focus,
-  .page-header .navbar .container #navbarNav #saturn.active {
+  .page-header .navbar .container-fluid #navbarNav #saturn:hover, .page-header .navbar .container-xxl #navbarNav #saturn:hover, .page-header .navbar .container-xl #navbarNav #saturn:hover, .page-header .navbar .container-lg #navbarNav #saturn:hover, .page-header .navbar .container-md #navbarNav #saturn:hover, .page-header .navbar .container-sm #navbarNav #saturn:hover,
+  .page-header .navbar .container-fluid #navbarNav #saturn:focus,
+  .page-header .navbar .container-xxl #navbarNav #saturn:focus,
+  .page-header .navbar .container-xl #navbarNav #saturn:focus,
+  .page-header .navbar .container-lg #navbarNav #saturn:focus,
+  .page-header .navbar .container-md #navbarNav #saturn:focus,
+  .page-header .navbar .container-sm #navbarNav #saturn:focus,
+  .page-header .navbar .container-fluid #navbarNav #saturn.active,
+  .page-header .navbar .container-xxl #navbarNav #saturn.active,
+  .page-header .navbar .container-xl #navbarNav #saturn.active,
+  .page-header .navbar .container-lg #navbarNav #saturn.active,
+  .page-header .navbar .container-md #navbarNav #saturn.active,
+  .page-header .navbar .container-sm #navbarNav #saturn.active {
     border-top: 0.1875rem solid #cd5120 !important;
     font-weight: 700 !important;
   }
-  .page-header .navbar .container #navbarNav #uranus:hover,
-  .page-header .navbar .container #navbarNav #uranus:focus,
-  .page-header .navbar .container #navbarNav #uranus.active {
+  .page-header .navbar .container-fluid #navbarNav #uranus:hover, .page-header .navbar .container-xxl #navbarNav #uranus:hover, .page-header .navbar .container-xl #navbarNav #uranus:hover, .page-header .navbar .container-lg #navbarNav #uranus:hover, .page-header .navbar .container-md #navbarNav #uranus:hover, .page-header .navbar .container-sm #navbarNav #uranus:hover,
+  .page-header .navbar .container-fluid #navbarNav #uranus:focus,
+  .page-header .navbar .container-xxl #navbarNav #uranus:focus,
+  .page-header .navbar .container-xl #navbarNav #uranus:focus,
+  .page-header .navbar .container-lg #navbarNav #uranus:focus,
+  .page-header .navbar .container-md #navbarNav #uranus:focus,
+  .page-header .navbar .container-sm #navbarNav #uranus:focus,
+  .page-header .navbar .container-fluid #navbarNav #uranus.active,
+  .page-header .navbar .container-xxl #navbarNav #uranus.active,
+  .page-header .navbar .container-xl #navbarNav #uranus.active,
+  .page-header .navbar .container-lg #navbarNav #uranus.active,
+  .page-header .navbar .container-md #navbarNav #uranus.active,
+  .page-header .navbar .container-sm #navbarNav #uranus.active {
     border-top: 0.1875rem solid #1ec2a4 !important;
     font-weight: 700 !important;
   }
-  .page-header .navbar .container #navbarNav #neptune:hover,
-  .page-header .navbar .container #navbarNav #neptune:focus,
-  .page-header .navbar .container #navbarNav #neptune.active {
+  .page-header .navbar .container-fluid #navbarNav #neptune:hover, .page-header .navbar .container-xxl #navbarNav #neptune:hover, .page-header .navbar .container-xl #navbarNav #neptune:hover, .page-header .navbar .container-lg #navbarNav #neptune:hover, .page-header .navbar .container-md #navbarNav #neptune:hover, .page-header .navbar .container-sm #navbarNav #neptune:hover,
+  .page-header .navbar .container-fluid #navbarNav #neptune:focus,
+  .page-header .navbar .container-xxl #navbarNav #neptune:focus,
+  .page-header .navbar .container-xl #navbarNav #neptune:focus,
+  .page-header .navbar .container-lg #navbarNav #neptune:focus,
+  .page-header .navbar .container-md #navbarNav #neptune:focus,
+  .page-header .navbar .container-sm #navbarNav #neptune:focus,
+  .page-header .navbar .container-fluid #navbarNav #neptune.active,
+  .page-header .navbar .container-xxl #navbarNav #neptune.active,
+  .page-header .navbar .container-xl #navbarNav #neptune.active,
+  .page-header .navbar .container-lg #navbarNav #neptune.active,
+  .page-header .navbar .container-md #navbarNav #neptune.active,
+  .page-header .navbar .container-sm #navbarNav #neptune.active {
     border-top: 0.1875rem solid #2d68f0 !important;
     font-weight: 700 !important;
   }

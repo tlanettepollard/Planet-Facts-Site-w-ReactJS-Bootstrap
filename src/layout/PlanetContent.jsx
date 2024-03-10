@@ -113,7 +113,7 @@ export default function PlanetContent(props) {
                 </div>
                 <div className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 ms-lg-4 ps-lg-4 d-md-flex flex-md-row flex-xl-column justify-content-md-between align-content-md-baseline align-items-lg-center'>
                     <div className='planet__content-info col-md-6 col-lg-6 col-xl-8 me-md-2 me-lg-0 mb-xl-0'>
-                        <h2 className='planet-name heading-2 py-2 py-lg-4'>{name}</h2>
+                        <h2 className='planet-name heading-2 py-2'>{name}</h2>
                         <p className='planet-info py-3'>{planetText}</p>
                         <div className='text-center text-md-start'>
                             <span>Source: <a href={wikiUrl}>Wikipedia</a></span>
