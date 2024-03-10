@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, Navigate, useParams } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from '/src/data.json';
+//import Home from './pages/Home';
 import Header from './layout/Header';
 import PlanetContent from './layout/PlanetContent';
 import Footer from './layout/Footer';
