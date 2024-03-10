@@ -16,7 +16,6 @@ This is a solution to the [Planets fact site challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,15 +29,33 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Mobile Page
+![iPhone XR](./public/screenshots/iPhone%20XR-1710111815990.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+---
+![Samsung Galaxy X8](./public/screenshots/Samsung%20Galaxy%20S8+-side.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+---
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+#### Tablet Page
+![iPad Air](./public/screenshots/iPad%20Air-1710111835794.png)
+
+---
+
+#### Desktop Page
+
+![MacBook Pro](./public/screenshots/Macbook%20Pro-1710111865993.png)
+
+---
+I have include four screen shots of four devices:
+
+- iPhone XR (414x896)
+- Samsung Galaxy X8 (360x740)
+- iPad (820x1180)
+- MacBook Pro (1440x900)
+
+I used the Responsively app while coding. They have a great screen-shot function. I also used Photoscape app to edit and combine the screen shots.
 
 ### Links
 
