@@ -83,7 +83,7 @@ export default function PlanetContent(props) {
 
 
         return (
-            <section className='planet-card container d-lg-flex flex-lg-column flex-xl-row align-items-lg-center pb-2 mt-lg-5 mt-xl-0'>
+            <section className='planet-card container-lg-fluid d-lg-flex flex-lg-column flex-xl-row align-items-lg-center pb-2 mt-lg-5 mt-xl-0'>
 
                 <nav className='planet-card__nav--mobile d-md-none'>
                     <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container borderBottom ${planetId}`}>
@@ -111,7 +111,7 @@ export default function PlanetContent(props) {
                     <Image className='planet-image' src={pageState === 'structure' ? props.images.internal : mainImage} fluid />
                     {showSurfaceImage ? <Image className='surface-image position-absolute  z-0' src={surfaceImage} fluid /> : null}
                 </div>
-                <div className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 d-md-flex flex-md-row flex-xl-column justify-content-md-between align-content-md-baseline align-items-lg-center'>
+                <div className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 ms-lg-4 ps-lg-4 d-md-flex flex-md-row flex-xl-column justify-content-md-between align-content-md-baseline align-items-lg-center'>
                     <div className='planet__content-info col-md-6 col-lg-6 col-xl-8 me-md-2 me-lg-0 mb-xl-0'>
                         <h2 className='planet-name heading-2 py-2'>{name}</h2>
                         <p className='planet-info py-3'>{planetText}</p>
