@@ -88,21 +88,19 @@ export default function PlanetContent(props) {
                 <nav className='planet-card__nav--mobile d-md-none'>
                     <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container borderBottom ${planetId}`}>
                         <li>
-                            <Button className={`btnPlanetMobile ${pageState === 'overview' ? 'active' : null}`} size='sm' type='button' onClick={showOverviewInfo}>
-                                <span className='pe-2'>01</span>
-                                Overview
+                            <Button className={`btnPlanetMobile mx-2 ${pageState === 'overview' ? 'active' : null}`} size='sm' type='button' onClick={showOverviewInfo}>
+                                <span className='px-2 text-uppercase text-secondary'>Overview</span>
                             </Button>
                         </li>
                         <li>
-                            <Button className={`btnPlanetMobile ${pageState === 'structure' ? 'active' : null}`} size='sm' type='button' onClick={showStructureInfo}>
-                                <span className='pe-2'>02</span>
-                                Structure
+                            <Button className={`btnPlanetMobile mx-2 ${pageState === 'structure' ? 'active' : null}`} size='sm' type='button' onClick={showStructureInfo}>
+                                <span className='px-2 text-uppercase text-secondary'>Structure</span>
                             </Button>
                         </li>
                         <li>
-                            <Button className={`btnPlanetMobile ${pageState === 'geology' ? 'active' : null}`} size='sm' type='button' onClick={showSurfaceInfo}>
-                                <span className='pe-2'>03</span>
-                                Surface
+                            <Button className={`btnPlanetMobile mx-2 ${pageState === 'geology' ? 'active' : null}`} size='sm' type='button' onClick={showSurfaceInfo}>
+                                <span className='px-2 text-uppercase text-secondary'>Surface</span>
+                                
                             </Button>
                         </li>
                     </ul>
@@ -125,18 +123,18 @@ export default function PlanetContent(props) {
                             <div className={`nav-buttons--tablet d-grid gap-4 mt-3 ms-md-2 ms-xl-0 ${planetId}`}>
 
                                 <Button className={`text-start d-md-flex justify-content-md-start btnPlanetTablet ${pageState === 'overview' ? 'active' : null}`} size='lg' type='button' onClick={showOverviewInfo}>
-                                    <p className='m-2'>01</p>
-                                    <p className='m-2'>Overview</p>
+                                    <p className='m-2 text-secondary'>01</p>
+                                    <p className='m-2 text-uppercase fw-bold'>Overview</p>
                                 </Button>
 
                                 <Button className={`text-start d-md-flex justify-content-md-start btnPlanetTablet ${pageState === 'structure' ? 'active' : null}`} size='lg' type='button' onClick={showStructureInfo}>
-                                    <p className='m-2'>02</p>
-                                    <p className='m-2'> Structure</p>
+                                    <p className='m-2 text-secondary'>02</p>
+                                    <p className='m-2 text-uppercase fw-bold'> Structure</p>
                                 </Button>
 
                                 <Button className={`text-start d-md-flex justify-content-md-start btnPlanetTablet ${pageState === 'geology' ? 'active' : null}`} size='lg' type='button' onClick={showSurfaceInfo}>
-                                    <p className='m-2'>03</p>
-                                    <p className='m-2'>Surface</p>
+                                    <p className='m-2 text-secondary'>03</p>
+                                    <p className='m-2 text-uppercase fw-bold'>Surface</p>
                                 </Button>
 
                             </div>

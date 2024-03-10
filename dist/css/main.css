@@ -300,6 +300,12 @@ body {
 .planet-card__nav--mobile .neptune .btn-primary.active {
   border-color: #2d68f0 !important;
 }
+.planet-card__nav--mobile .btn-primary.active {
+  font-weight: 700 !important;
+}
+.planet-card__nav--mobile .btn-primary.active .text-secondary {
+  color: white !important;
+}
 
 .planet-card__nav--tablet .mercury > .btnPlanetTablet.active {
   background-color: #419ebb !important;

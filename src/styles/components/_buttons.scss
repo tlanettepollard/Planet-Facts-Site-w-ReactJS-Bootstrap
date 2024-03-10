@@ -2,12 +2,15 @@
     &__nav--mobile {
         height: 3.75rem;
         width: 100%;
+
         .borderTop {
             border-top: 1px solid $color-dk-gray;
         }
+
         .borderBottom {
             border-bottom: 1px solid $color-dk-gray;
         }
+
         .nav-buttons {
             height: 3rem;
         }
@@ -28,6 +31,7 @@
 .planet-card__nav--mobile {
     .mercury .btn-primary.active {
         border-color: $mercury !important;
+
     }
 
     .venus .btn-primary.active {
@@ -57,7 +61,15 @@
     .neptune .btn-primary.active {
         border-color: $neptune !important;
     }
+
+    .btn-primary.active {
+        font-weight: 700 !important;
+        .text-secondary {
+            color: white !important;
+        }
+    }
 }
+
 
 
 // Tablet Buttons
