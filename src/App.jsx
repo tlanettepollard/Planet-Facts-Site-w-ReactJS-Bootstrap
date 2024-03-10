@@ -5,7 +5,7 @@ import data from '/src/data.json';
 import Header from './layout/Header';
 import PlanetContent from './layout/PlanetContent';
 import Footer from './layout/Footer';
-import '/dist/css/main.css';
+import '../dist/css/main.css';
 
 
 
