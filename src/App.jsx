@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, Navigate, useParams } from 'react-router-dom';
-import '../dist/css/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from '/src/data.json';
 import Header from './layout/Header';
 import PlanetContent from './layout/PlanetContent';
 import Footer from './layout/Footer';
+import '/dist/css/main.css';
 
 
 
@@ -51,7 +51,7 @@ function Planet() {
     return <p>Loading profile...</p>
   }
   return (
-  
+
     <PlanetContent planetName={planetName} planetObj={planet} />
   )
 }
