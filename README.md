@@ -30,6 +30,7 @@ Users should be able to:
 ### Screenshot
 
 #### Mobile Page
+
 ![iPhone XR](./public/screenshots/iPhone%20XR-1710111815990.png)
 
 ---
@@ -39,6 +40,7 @@ Users should be able to:
 
 
 #### Tablet Page
+
 ![iPad Air](./public/screenshots/iPad%20Air-1710111835794.png)
 
 ---
