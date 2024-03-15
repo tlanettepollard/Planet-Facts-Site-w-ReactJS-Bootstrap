@@ -62,22 +62,17 @@ I used the Responsively app while coding. They have a great screen-shot function
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://planet-facts-site-w-react-js-bootstrap.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [React with Vite](https://vitejs.dev/guide/) - JS library
+- [React Bootstrap](https://react-bootstrap.netlify.app/) - React framework
+- [React Router](https://reactrouter.com/en/main)
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
