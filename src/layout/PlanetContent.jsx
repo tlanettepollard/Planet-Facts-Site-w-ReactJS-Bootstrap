@@ -100,7 +100,7 @@ export default function PlanetContent(props) {
                         <li>
                             <Button className={`btnPlanetMobile mx-2 ${pageState === 'geology' ? 'active' : null}`} size='sm' type='button' onClick={showSurfaceInfo}>
                                 <span className='px-2 text-uppercase text-secondary'>Surface</span>
-                                
+
                             </Button>
                         </li>
                     </ul>

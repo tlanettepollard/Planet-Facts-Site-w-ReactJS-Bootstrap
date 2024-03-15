@@ -82,9 +82,6 @@ I am also proud that I learned how to override Bootstrap default styles within m
 
 Some code snippets I am proud of:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
 
 .planet-card__nav--mobile {
@@ -122,9 +119,9 @@ Some code snippets I am proud of:
 
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+<Button className={`btnPlanetMobile mx-2 ${pageState === 'overview' ? 'active' : null}`} size='sm' type='button' onClick={showOverviewInfo}>
+     <span className='px-2 text-uppercase text-secondary'>Overview</span>
+</Button>
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
