@@ -69,14 +69,16 @@ I used the Responsively app while coding. They have a great screen-shot function
 ### Built with
 
 - Mobile-first workflow
-- [React with Vite](https://vitejs.dev/guide/) - JS library
-- [React Bootstrap](https://react-bootstrap.netlify.app/) - React framework
+- [React with Vite](https://vitejs.dev/guide/) - Build tool for using ReactJS
+- [React Bootstrap](https://react-bootstrap.netlify.app/) - Frontend framework for ReactJS
 - [React Router](https://reactrouter.com/en/main)
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+My goal was to design this project as an Single Page App (SPA). I initially started my project in February 2023 using HTML and JS. I got stuck and frustrated, so I put the project aside. After working on more ReactJS projects, I decided to start the project again in January 2024. I finally learned how to input data from a json file to populate information for each planet when the navigation links and planet buttons are clicked. (Yay Me!)  
+
+I am also proud that I learned how to override Bootstrap default styles within my SCSS files. That took some trial and error, but I was able to get the colors set for each planet. 
 
 To see how you can add code snippets, see below:
 
@@ -84,9 +86,40 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+
+.planet-card__nav--mobile {
+    .mercury .btn-primary.active {
+        border-color: $mercury !important
+    }
+    .venus .btn-primary.active {
+        border-color: $venus !important;
+    }
+    .earth .btn-primary.active {
+        border-color: $earth !important;
+    }
+    .mars .btn-primary.active {
+        border-color: $mars !important;
+    }
+    .jupiter .btn-primary.active {
+        border-color: $jupiter !important
+    }
+    .saturn .btn-primary.active {
+        border-color: $saturn !important;
+    }
+    .uranus .btn-primary.active {
+        border-color: $uranus !important;
+    }
+    .neptune .btn-primary.active {
+        border-color: $neptune !important
+    }
+    .btn-primary.active {
+        font-weight: 700 !important;
+        .text-secondary {
+            color: white !important;
+        }
+    }
 }
+
 ```
 ```js
 const proudOfThisFunc = () => {
