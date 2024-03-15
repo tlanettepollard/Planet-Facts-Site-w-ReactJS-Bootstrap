@@ -141,11 +141,10 @@ I want to continue working with ReactJS to improve my skills. I used **Bootstrap
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Portfolio - [T. Lanette Pollard](https://trista-lanette-pollard-portfolio.vercel.app/)
+- Frontend Mentor - [@tlanettepollard](https://www.frontendmentor.io/profile/tlanettepollard)
+- Twitter - [@yTpLanetteNBCT](https://twitter.com/TpLanetteNBCT)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
