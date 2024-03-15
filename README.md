@@ -80,7 +80,7 @@ My goal was to design this project as an Single Page App (SPA). I initially star
 
 I am also proud that I learned how to override Bootstrap default styles within my SCSS files. That took some trial and error, but I was able to get the colors set for each planet. 
 
-To see how you can add code snippets, see below:
+Some code snippets I am proud of:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
