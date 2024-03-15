@@ -148,6 +148,9 @@ I want to continue working with ReactJS to improve my skills. I used **Bootstrap
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I referred to the following repositories while working on my project:  
+- [Igorbanjac91 Planet Fact Site](https://github.com/igorbanjac91/planet-fact-site/tree/master)-- helped me with my structure and organization of my SPA;
+- [Ravvsky Planet Facts Site](https://github.com/Ravvsky/PlanetsFactsSite/tree/main)-- helped with reorganizing the state in my components.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
+
