@@ -124,22 +124,20 @@ Some code snippets I am proud of:
 </Button>
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to continue working with ReactJS to improve my skills. I used **Bootstrap** for this project. I plan on using **TailwindCSS** for my next project. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Daggala](https://www.daggala.com/react-state-not-updating-immediately/) - Blog post that helped me diagnose the issue of React states not setting immediately.
+- [Dave Ceddia](https://daveceddia.com/react-before-render/) - Blog article that helped me with setting up conditional rendering (preventing React from trying to render components before the data was loaded and set in state).
+- [Passing ClassName to Component in React](https://dev.to/dailydevtips1/passing-classname-to-components-in-react-12o2) - How to add mixed class names to React Components.
+- [Ultimate React Router Guide](https://blog.webdevsimplified.com/2022-07/react-router/) - Blog post about React Router.
+- [React Router](https://reactrouter.com/en/main) 
+- [Resolving the Vercel 404 page not found Error](https://dev.to/stanlisberg/resolving-the-vercel-404-page-not-found-error-after-page-refresh-9b9) - How to add a vercel.json file to help Vercel configure the routing accurately.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
