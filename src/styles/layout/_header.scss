@@ -18,9 +18,9 @@
 
                 @include bp-lg-up {
 
-                    #mercury:hover,
-                    #mercury:focus,
-                    #mercury.active {
+                    #planetMercury:hover,
+                    #planetMercury:focus,
+                    #planetMercury.active {
                         border-top: .1875rem solid $mercury !important;
                         font-weight: 700 !important;
                     }
