@@ -15,7 +15,7 @@ export default function Header() {
                     <NavbarToggle aria-controls='navbarScroll' id='navbarBtn' className='custom-toggler' />
                     <NavbarCollapse id='navbarCollapse' className='flex-lg-grow-0'>
                         <Nav className='me-auto d-md-inline-flex justify-content-md-center align-items-md-start gap-4 gap-md-3 gap-lg-4 pe-md-2 pe-lg-5' id='navbarNav'>
-                            <NavLink to='/mercury' id='planetMercury' className='planet-page-link text-uppercase link-underline link-underline-opacity-0 d-inline-flex justify-content-between align-items-center border-bottom border-secondary border-1 border-opacity-25'>
+                            <NavLink to='/mercury' id='planet-mercury' className='planet-page-link text-uppercase link-underline link-underline-opacity-0 d-inline-flex justify-content-between align-items-center border-bottom border-secondary border-1 border-opacity-25'>
                                 <div>
                                     <img src="/assets/mercury-circle.png" className='me-4 d-md-none' alt="" />
                                     <span>Mercury</span>
