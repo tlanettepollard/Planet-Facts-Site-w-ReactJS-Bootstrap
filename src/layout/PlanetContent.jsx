@@ -86,20 +86,20 @@ export default function PlanetContent(props) {
             <section className='planet-card container-lg-fluid d-lg-flex flex-lg-column flex-xl-row align-items-lg-center pb-2 mt-lg-5 mt-xl-0'>
 
                 <nav className='planet-card__nav--mobile d-md-none'>
-                    <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container borderBottom ${planetId}`}>
+                    <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container borderTop borderBottom ${planetId}`}>
                         <li>
-                            <Button className={`btnPlanetMobile mx-2 ${pageState === 'overview' ? 'active' : null}`} size='sm' type='button' onClick={showOverviewInfo}>
-                                <span className='px-2 text-uppercase text-secondary'>Overview</span>
+                            <Button className={`btnPlanetMobile mx-2 pt-4 ${pageState === 'overview' ? 'active' : null}`} size='sm' type='button' onClick={showOverviewInfo}>
+                                <h6 className='text-uppercase text-secondary heading-6'>Overview</h6>
                             </Button>
                         </li>
                         <li>
-                            <Button className={`btnPlanetMobile mx-2 ${pageState === 'structure' ? 'active' : null}`} size='sm' type='button' onClick={showStructureInfo}>
-                                <span className='px-2 text-uppercase text-secondary'>Structure</span>
+                            <Button className={`btnPlanetMobile mx-2 pt-4 ${pageState === 'structure' ? 'active' : null}`} size='sm' type='button' onClick={showStructureInfo}>
+                                <h6 className=' text-uppercase text-secondary heading-6'>Structure</h6>
                             </Button>
                         </li>
                         <li>
-                            <Button className={`btnPlanetMobile mx-2 ${pageState === 'geology' ? 'active' : null}`} size='sm' type='button' onClick={showSurfaceInfo}>
-                                <span className='px-2 text-uppercase text-secondary'>Surface</span>
+                            <Button className={`btnPlanetMobile mx-2 pt-4 ${pageState === 'geology' ? 'active' : null}`} size='sm' type='button' onClick={showSurfaceInfo}>
+                                <h6 className=' text-uppercase text-secondary heading-6'>Surface</h6>
 
                             </Button>
                         </li>

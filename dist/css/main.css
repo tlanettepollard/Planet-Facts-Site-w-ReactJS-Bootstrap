@@ -52,6 +52,12 @@ body {
   color: #ffffff;
 }
 
+.heading-6 {
+  font-family: "Spartan";
+  font-size: 0.75rem;
+  letter-spacing: 0.1206rem;
+}
+
 .page-title {
   font-family: "Antonio";
   font-size: 1.75rem;
@@ -223,6 +229,12 @@ body {
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.heading-6 {
+  font-family: "Spartan";
+  font-size: 0.75rem;
+  letter-spacing: 0.1206rem;
 }
 
 .page-title {
