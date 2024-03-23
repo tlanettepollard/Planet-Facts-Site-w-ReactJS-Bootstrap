@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Container, Navbar, NavbarCollapse, NavbarToggle } from 'react-bootstrap';
+import { Nav, Container, Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 export default function Header() {
@@ -7,11 +7,10 @@ export default function Header() {
 
     return (
         <header className='page-header container-fluid'>
-            <Navbar collapseOnSelect expand="md" className='navbar-dark pb-md-5 pt-lg-5 pb-lg-4 pt-xl-2 pb-xl-2 borderBottom container-fluid'>
+            <Navbar collapseOnSelect expand="md" className='navbar-dark pb-md-4 pt-lg-5 pb-lg-4 pt-xl-2 pb-xl-2 borderBottom container-fluid'>
                 <Container className='d-md-flex flex-md-column flex-xl-row justify-content-lg-between' fluid>
-                    <Navbar.Brand>
-                        <p className='text-uppercase pb-md-3  pt-lg-3 ms-xl-5 page-title'>The Planets</p>
-                    </Navbar.Brand>
+                    <NavbarBrand className='text-uppercase pb-md-4  pt-lg-3 ms-xl-5 page-title'>The Planets
+                    </NavbarBrand>
                     <NavbarToggle aria-controls='navbarScroll' id='navbarBtn' className='custom-toggler' />
                     <NavbarCollapse id='navbarCollapse' className='flex-lg-grow-0'>
                         <Nav className='me-auto d-md-inline-flex justify-content-md-center align-items-md-start gap-4 gap-md-3 gap-lg-4 pe-md-2 pe-lg-5' id='navbarNav'>

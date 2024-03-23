@@ -61,6 +61,11 @@ body {
   color: #ffffff !important;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 768px) {
+  .page-title {
+    font-size: 1.875rem !important;
+  }
+}
 
 .planet-page-link {
   color: #ffffff !important;
@@ -228,6 +233,11 @@ body {
   letter-spacing: -0.0656rem;
   color: #ffffff !important;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .page-title {
+    font-size: 1.875rem !important;
+  }
 }
 
 .planet-page-link {
