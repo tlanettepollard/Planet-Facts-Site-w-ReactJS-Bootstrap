@@ -19,7 +19,7 @@ export default function PlanetContent(props) {
                 surface={props.planetObj.geology}
                 images={props.planetObj.images}
             />
-            <div className='mt-md-5 mt-lg-5 mt-xl-5'>
+            <div role='contentinfo' className='mt-md-5 mt-lg-5 mt-xl-5'>
                 <PlanetDataList planet={props.planetObj} />
             </div>
         </>
@@ -105,7 +105,7 @@ export default function PlanetContent(props) {
                         </li>
                     </ul>
                 </nav>
-                <section id={planetId} className='planet-image__container container position-relative d-flex align-items-center justify-content-center m-auto p-5 p-xl-0'>
+                <section role='img' id={planetId} className='planet-image__container container position-relative d-flex align-items-center justify-content-center m-auto p-5 p-xl-0'>
                     <Image className='planet-image' src={pageState === 'structure' ? props.images.internal : mainImage} fluid alt='Planet Image' />
                     {showSurfaceImage ? <Image className='surface-image position-absolute  z-0' src={surfaceImage} fluid alt='Geology image' /> : null}
                 </section>
@@ -118,7 +118,7 @@ export default function PlanetContent(props) {
                             <img src='/assets/icon-source.svg' alt='source icon' />
                         </div>
                     </div>
-                    <div role='tabletbuttons' className='col-md-6 col-lg-6 col-xl-8'>
+                    <div role='navigation' className='col-md-6 col-lg-6 col-xl-8'>
                         <div className='planet-card__nav--tablet d-none d-md-block d-md-flex flex-md-column justify-content-md-center py-md-3'>
                             <div className={`nav-buttons--tablet d-grid gap-4 mt-3 ms-md-2 ms-xl-0 ${planetId}`}>
 
