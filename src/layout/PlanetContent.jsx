@@ -105,7 +105,7 @@ export default function PlanetContent(props) {
                         </li>
                     </ul>
                 </nav>
-                <section role='img' id={planetId} className='planet-image__container container position-relative d-flex align-items-center justify-content-center m-auto p-5 p-xl-0'>
+                <section role='contentinfo' id={planetId} className='planet-image__container container position-relative d-flex align-items-center justify-content-center m-auto p-5 p-xl-0'>
                     <Image className='planet-image' src={pageState === 'structure' ? props.images.internal : mainImage} fluid alt='Planet Image' />
                     {showSurfaceImage ? <Image className='surface-image position-absolute  z-0' src={surfaceImage} fluid alt='Geology image' /> : null}
                 </section>
