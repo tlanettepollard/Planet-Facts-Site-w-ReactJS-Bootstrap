@@ -1,0 +1,126 @@
+.planet-card {
+    &__nav--mobile {
+        height: 3.75rem;
+        width: 100%;
+
+        .borderTop {
+            border-top: 1px solid $color-dk-gray;
+        }
+
+        .borderBottom {
+            border-bottom: 1px solid $color-dk-gray;
+        }
+
+        .nav-buttons {
+            height: 3rem;
+        }
+
+
+
+    }
+
+    .planet-content {
+        .planet-card__nav--tablet {
+            width: 100%;
+
+        }
+    }
+}
+
+// Mobile Buttons
+.planet-card__nav--mobile {
+    .planetMercury .btn-primary.active {
+        border-color: $mercury !important;
+
+    }
+
+    .planetVenus .btn-primary.active {
+        border-color: $venus !important;
+    }
+
+    .planetEarth .btn-primary.active {
+        border-color: $earth !important;
+    }
+
+    .planetMars .btn-primary.active {
+        border-color: $mars !important;
+    }
+
+    .planetJupiter .btn-primary.active {
+        border-color: $jupiter !important;
+    }
+
+    .planetSaturn .btn-primary.active {
+        border-color: $saturn !important;
+    }
+
+    .planetUranus .btn-primary.active {
+        border-color: $uranus !important;
+    }
+
+    .planetNeptune .btn-primary.active {
+        border-color: $neptune !important;
+    }
+
+    .btn-primary.active {
+        font-weight: 700 !important;
+
+        .text-secondary {
+            color: white !important;
+        }
+    }
+}
+
+
+
+// Tablet Buttons
+.planet-card__nav--tablet {
+    .planetMercury>.btnPlanetTablet.active {
+        background-color: $mercury !important;
+    }
+
+    .planetVenus>.btnPlanetTablet.active {
+        background-color: $venus !important;
+    }
+
+    .planetEarth>.btnPlanetTablet.active {
+        background-color: $earth !important;
+    }
+
+    .planetMars>.btnPlanetTablet.active {
+        background-color: $mars !important;
+    }
+
+    .planetJupiter>.btnPlanetTablet.active {
+        background-color: $jupiter !important;
+    }
+
+    .planetSaturn>.btnPlanetTablet.active {
+        background-color: $saturn !important;
+    }
+
+    .planetUranus>.btnPlanetTablet.active {
+        background-color: $uranus !important;
+    }
+
+    .planetNeptune>.btnPlanetTablet.active {
+        background-color: $neptune !important;
+    }
+
+    .btnPlanetTablet:hover {
+        background-color: $color-dk-gray !important;
+    }
+}
+
+// Bootstrap Variables Override
+.btn,
+.btn-primary {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 4px solid transparent !important;
+
+
+    @include bp-tablet-up {
+        border: 1px solid $color-lt-gray !important;
+    }
+}

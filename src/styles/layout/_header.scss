@@ -1,0 +1,98 @@
+.page-header {
+    .navbar {
+        .container-fluid {
+            width: 100%;
+
+            #navbarNav {
+
+                .planet-page-link {
+                    @include bp-lg-up {
+                        height: 5rem;
+                        border-bottom: none !important;
+                    }
+                }
+
+                @include bp-tablet-up {
+                    width: 100%;
+                }
+
+                @include bp-lg-up {
+
+                    #mercury:hover,
+                    #mercury:focus,
+                    #mercury.active {
+                        border-top: .1875rem solid $mercury !important;
+                        font-weight: 700 !important;
+                    }
+
+                    #venus:hover,
+                    #venus:focus,
+                    #venus.active {
+                        border-top: .1875rem solid $venus !important;
+                        font-weight: 700 !important;
+                    }
+
+                    #earth:hover,
+                    #earth:focus,
+                    #earth.active {
+                        border-top: .1875rem solid $earth !important;
+                        font-weight: 700 !important;
+                    }
+
+                    #mars:hover,
+                    #mars:focus,
+                    #mars.active {
+                        border-top: .1875rem solid $mars !important;
+                        font-weight: 700 !important;
+                    }
+
+                    #jupiter:hover,
+                    #jupiter:focus,
+                    #jupiter.active {
+                        border-top: .1875rem solid $jupiter !important;
+                        font-weight: 700 !important;
+                    }
+
+                    #saturn:hover,
+                    #saturn:focus,
+                    #saturn.active {
+                        border-top: .1875rem solid $saturn !important;
+                        font-weight: 700 !important;
+                    }
+
+                    #uranus:hover,
+                    #uranus:focus,
+                    #uranus.active {
+                        border-top: .1875rem solid $uranus !important;
+                        font-weight: 700 !important;
+                    }
+
+                    #neptune:hover,
+                    #neptune:focus,
+                    #neptune.active {
+                        border-top: .1875rem solid $neptune !important;
+                        font-weight: 700 !important;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .borderBottom {
+        @include bp-tablet-up {
+            border-bottom: 1px solid $color-dk-gray;
+        }
+    }
+}
+
+
+
+
+
+
+// Custom Changes to Bootstrap
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

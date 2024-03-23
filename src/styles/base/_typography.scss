@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap');
+
+body {
+    font-family: 'Spartan';
+    font-weight: 400;
+    font-style: normal;
+    font-size: .875rem;
+    line-height: .3125rem;
+    color: $main-light !important;
+}
+
+.heading-1 {
+    font-family: 'Antonio';
+    font-size: 5rem;
+    font-style: normal;
+    line-height: 6.4375rem;
+    color: $main-light !important;
+    text-transform: uppercase;
+}
+
+.heading-2 {
+    font-family: 'Antonio';
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.25rem;
+    letter-spacing: -0.0938rem;
+    text-transform: uppercase;
+    color: $main-light !important;
+
+}
+
+.heading-3 {
+    font-family: 'Spartan';
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    letter-spacing: .1607rem;
+    text-transform: uppercase;
+    color: $main-light !important;
+}
+
+.heading-4 {
+    font-family: 'Spartan';
+    font-size: .6875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    letter-spacing: .0625rem;
+    text-transform: uppercase;
+    color: $main-light;
+}
+
+.heading-6 {
+    font-family: 'Spartan';
+    font-size: .75rem;
+    letter-spacing: .1206rem;
+}
+
+.page-title {
+    font-family: 'Antonio';
+    font-size: 1.75rem;
+    font-style: normal;
+    line-height: auto;
+    letter-spacing: -0.0656rem;
+    color: $main-light !important;
+    text-transform: uppercase;
+
+    @include bp-tablet-up {
+        font-size: 1.875rem !important;
+    }
+
+}
+
+.planet-page-link {
+    color: $main-light !important;
+}
+
+.fact-title {
+    font-size: .5rem;
+
+    @include bp-lg-up {
+        font-size: .6875rem;
+    }
+}
+
+.fact-value {
+    font-family: 'Antonio';
+    font-size: 1.75rem;
+    letter-spacing: -0.75px;
+
+    @include bp-tablet-up {
+        font-size: 1.5rem;
+    }
+
+    @include bp-lg-up {
+        font-size: 2.5rem;
+    }
+}
