@@ -4,7 +4,7 @@ import React from 'react';
 export default function Footer() {
     return (
         <section className="attribution text-center mt-lg-5 mt-xl-2 py-4 fs-6">
-            <span className='text-secondary'>Challenge by </span>
+            <h6 className='text-secondary'>Challenge by </h6>
             <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" className='link-secondary'>
                 Frontend Mentor
             </a>
