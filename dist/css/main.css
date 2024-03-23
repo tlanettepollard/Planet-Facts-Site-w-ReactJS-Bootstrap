@@ -307,28 +307,28 @@ body {
   color: white !important;
 }
 
-.planet-card__nav--tablet .mercury > .btnPlanetTablet.active {
+.planet-card__nav--tablet .planetMercury > .btnPlanetTablet.active {
   background-color: #419ebb !important;
 }
-.planet-card__nav--tablet .venus > .btnPlanetTablet.active {
+.planet-card__nav--tablet .planetVenus > .btnPlanetTablet.active {
   background-color: #eda249 !important;
 }
-.planet-card__nav--tablet .earth > .btnPlanetTablet.active {
+.planet-card__nav--tablet .planetEarth > .btnPlanetTablet.active {
   background-color: #6f2ed6 !important;
 }
-.planet-card__nav--tablet .mars > .btnPlanetTablet.active {
+.planet-card__nav--tablet .planetMars > .btnPlanetTablet.active {
   background-color: #d14c32 !important;
 }
-.planet-card__nav--tablet .jupiter > .btnPlanetTablet.active {
+.planet-card__nav--tablet .planetJupiter > .btnPlanetTablet.active {
   background-color: #d83a34 !important;
 }
-.planet-card__nav--tablet .saturn > .btnPlanetTablet.active {
+.planet-card__nav--tablet .planetSaturn > .btnPlanetTablet.active {
   background-color: #cd5120 !important;
 }
-.planet-card__nav--tablet .uranus > .btnPlanetTablet.active {
+.planet-card__nav--tablet .planetUranus > .btnPlanetTablet.active {
   background-color: #1ec2a4 !important;
 }
-.planet-card__nav--tablet .neptune > .btnPlanetTablet.active {
+.planet-card__nav--tablet .planetNeptune > .btnPlanetTablet.active {
   background-color: #2d68f0 !important;
 }
 .planet-card__nav--tablet .btnPlanetTablet:hover {
@@ -544,130 +544,130 @@ body {
 .planet-card .planet-image__container {
   height: auto;
 }
-.planet-card #mercury .planet-image {
+.planet-card #planetMercury .planet-image {
   width: 6.9375rem;
   height: 6.9375rem;
 }
 @media only screen and (min-width: 768px) {
-  .planet-card #mercury .planet-image {
+  .planet-card #planetMercury .planet-image {
     width: 11.5rem;
     height: 11.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #mercury .planet-image {
+  .planet-card #planetMercury .planet-image {
     width: 18.125rem;
     height: 18.125rem;
   }
 }
-.planet-card #venus .planet-image {
+.planet-card #planetVenus .planet-image {
   width: 9.625rem;
   height: 9.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .planet-card #venus .planet-image {
+  .planet-card #planetVenus .planet-image {
     width: 15.8125rem;
     height: 15.8125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #venus .planet-image {
+  .planet-card #planetVenus .planet-image {
     width: 25rem;
     height: 25rem;
   }
 }
-.planet-card #earth .planet-image {
+.planet-card #planetEarth .planet-image {
   width: 10.8125rem;
   height: 10.8125rem;
 }
 @media only screen and (min-width: 768px) {
-  .planet-card #earth .planet-image {
+  .planet-card #planetEarth .planet-image {
     width: 17.8125rem;
     height: 17.8125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #earth .planet-image {
+  .planet-card #planetEarth .planet-image {
     width: 28.125rem;
     height: 28.125rem;
   }
 }
-.planet-card #mars .planet-image {
+.planet-card #planetMars .planet-image {
   width: 8.0625rem;
   height: 8.0625rem;
 }
 @media only screen and (min-width: 768px) {
-  .planet-card #mars .planet-image {
+  .planet-card #planetMars .planet-image {
     width: 13.3125rem;
     height: 13.3125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #mars .planet-image {
+  .planet-card #planetMars .planet-image {
     width: 21rem;
     height: 21rem;
   }
 }
-.planet-card #jupiter .planet-image {
+.planet-card #planetJupiter .planet-image {
   width: 14rem;
   height: 14rem;
 }
 @media only screen and (min-width: 768px) {
-  .planet-card #jupiter .planet-image {
+  .planet-card #planetJupiter .planet-image {
     width: 23.0625rem;
     height: 23.0625rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #jupiter .planet-image {
+  .planet-card #planetJupiter .planet-image {
     width: 36.375rem;
     height: 36.375rem;
   }
 }
-.planet-card #saturn .planet-image {
+.planet-card #planetSaturn .planet-image {
   width: 16rem;
   height: 16rem;
 }
 @media only screen and (min-width: 768px) {
-  .planet-card #saturn .planet-image {
+  .planet-card #planetSaturn .planet-image {
     width: 26.375rem;
     height: 26.375rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #saturn .planet-image {
+  .planet-card #planetSaturn .planet-image {
     width: 41.625rem;
     height: 41.625rem;
   }
 }
-.planet-card #uranus .planet-image {
+.planet-card #planetUranus .planet-image {
   width: 11rem;
   height: 11rem;
 }
 @media only screen and (min-width: 768px) {
-  .planet-card #uranus .planet-image {
+  .planet-card #planetUranus .planet-image {
     width: 18.125rem;
     height: 18.125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #uranus .planet-image {
+  .planet-card #planetUranus .planet-image {
     width: 28.625rem;
     height: 28.625rem;
   }
 }
-.planet-card #neptune .planet-image {
+.planet-card #planetNeptune .planet-image {
   width: 10.8125rem;
   height: 10.8125rem;
 }
 @media only screen and (min-width: 768px) {
-  .planet-card #neptune .planet-image {
+  .planet-card #planetNeptune .planet-image {
     width: 17.8125rem;
     height: 17.8125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #neptune .planet-image {
+  .planet-card #planetNeptune .planet-image {
     width: 28.125rem;
     height: 28.125rem;
   }
@@ -688,72 +688,72 @@ body {
     height: auto;
   }
 }
-.planet-card #mercury .surface-image {
+.planet-card #planetMercury .surface-image {
   bottom: 5%;
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #mercury .surface-image {
+  .planet-card #planetMercury .surface-image {
     bottom: -30%;
   }
 }
-.planet-card #venus .surface-image {
+.planet-card #planetVenus .surface-image {
   bottom: 10%;
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #venus .surface-image {
+  .planet-card #planetVenus .surface-image {
     bottom: -15%;
   }
 }
-.planet-card #earth .surface-image {
+.planet-card #planetEarth .surface-image {
   bottom: 10%;
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #earth .surface-image {
+  .planet-card #planetEarth .surface-image {
     bottom: -15%;
   }
 }
-.planet-card #mars .surface-image {
+.planet-card #planetMars .surface-image {
   bottom: 10%;
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #mars .surface-image {
+  .planet-card #planetMars .surface-image {
     bottom: -15%;
   }
 }
-.planet-card #jupiter .surface-image {
+.planet-card #planetJupiter .surface-image {
   bottom: 10%;
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #jupiter .surface-image {
+  .planet-card #planetJupiter .surface-image {
     bottom: 0%;
   }
 }
-.planet-card #saturn .surface-image {
+.planet-card #planetSaturn .surface-image {
   bottom: 25%;
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #saturn .surface-image {
+  .planet-card #planetSaturn .surface-image {
     bottom: 25%;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .planet-card #saturn .surface-image {
+  .planet-card #planetSaturn .surface-image {
     bottom: 10%;
   }
 }
-.planet-card #uranus .surface-image {
+.planet-card #planetUranus .surface-image {
   bottom: 10%;
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #uranus .surface-image {
+  .planet-card #planetUranus .surface-image {
     bottom: -15%;
   }
 }
-.planet-card #neptune .surface-image {
+.planet-card #planetNeptune .surface-image {
   bottom: 10%;
 }
 @media only screen and (min-width: 1200px) {
-  .planet-card #neptune .surface-image {
+  .planet-card #planetNeptune .surface-image {
     bottom: -15%;
   }
 }

@@ -5,7 +5,7 @@
     }
 
     // Planet Sizes-- Main
-    #mercury .planet-image {
+    #planetMercury .planet-image {
         width: 6.9375rem;
         height: 6.9375rem;
 
@@ -20,7 +20,7 @@
         }
     }
 
-    #venus .planet-image {
+    #planetVenus .planet-image {
         width: 9.625rem;
         height: 9.625rem;
 
@@ -35,7 +35,7 @@
         }
     }
 
-    #earth .planet-image {
+    #planetEarth .planet-image {
         width: 10.8125rem;
         height: 10.8125rem;
 
@@ -50,7 +50,7 @@
         }
     }
 
-    #mars .planet-image {
+    #planetMars .planet-image {
         width: 8.0625rem;
         height: 8.0625rem;
 
@@ -65,7 +65,7 @@
         }
     }
 
-    #jupiter .planet-image {
+    #planetJupiter .planet-image {
         width: 14rem;
         height: 14rem;
 
@@ -80,7 +80,7 @@
         }
     }
 
-    #saturn .planet-image {
+    #planetSaturn .planet-image {
         width: 16rem;
         height: 16rem;
 
@@ -95,7 +95,7 @@
         }
     }
 
-    #uranus .planet-image {
+    #planetUranus .planet-image {
         width: 11rem;
         height: 11rem;
 
@@ -110,7 +110,7 @@
         }
     }
 
-    #neptune .planet-image {
+    #planetNeptune .planet-image {
         width: 10.8125rem;
         height: 10.8125rem;
 
@@ -145,7 +145,7 @@
 
     }
 
-    #mercury .surface-image {
+    #planetMercury .surface-image {
         bottom: 5%;
 
         @include bp-lg-up {
@@ -153,7 +153,7 @@
         }
     }
 
-    #venus .surface-image {
+    #planetVenus .surface-image {
         bottom: 10%;
 
         @include bp-lg-up {
@@ -161,7 +161,7 @@
         }
     }
 
-    #earth .surface-image {
+    #planetEarth .surface-image {
         bottom: 10%;
 
         @include bp-lg-up {
@@ -169,7 +169,7 @@
         }
     }
 
-    #mars .surface-image {
+    #planetMars .surface-image {
         bottom: 10%;
 
         @include bp-lg-up {
@@ -178,7 +178,7 @@
 
     }
 
-    #jupiter .surface-image {
+    #planetJupiter .surface-image {
         bottom: 10%;
 
         @include bp-lg-up {
@@ -186,7 +186,7 @@
         }
     }
 
-    #saturn .surface-image {
+    #planetSaturn .surface-image {
         bottom: 25%;
 
         @include bp-lg-up {
@@ -200,7 +200,7 @@
 
     }
 
-    #uranus .surface-image {
+    #planetUranus .surface-image {
         bottom: 10%;
 
         @include bp-lg-up {
@@ -208,7 +208,7 @@
         }
     }
 
-    #neptune .surface-image {
+    #planetNeptune .surface-image {
         bottom: 10%;
 
         @include bp-lg-up {
