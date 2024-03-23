@@ -105,11 +105,11 @@ export default function PlanetContent(props) {
                         </li>
                     </ul>
                 </nav>
-                <div id={planetId} className='planet-image__container container position-relative d-flex align-items-center justify-content-center m-auto p-5 p-xl-0'>
+                <section id={planetId} className='planet-image__container container position-relative d-flex align-items-center justify-content-center m-auto p-5 p-xl-0'>
                     <Image className='planet-image' src={pageState === 'structure' ? props.images.internal : mainImage} fluid />
                     {showSurfaceImage ? <Image className='surface-image position-absolute  z-0' src={surfaceImage} fluid /> : null}
-                </div>
-                <div className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 ms-lg-4 ps-lg-4 d-md-flex flex-md-row flex-xl-column justify-content-md-between align-content-md-baseline align-items-lg-center'>
+                </section>
+                <section className='planet__content container text-center text-md-start mt-5 mb-4 pb-4 ms-lg-4 ps-lg-4 d-md-flex flex-md-row flex-xl-column justify-content-md-between align-content-md-baseline align-items-lg-center'>
                     <div className='planet__content-info col-md-6 col-lg-6 col-xl-8 me-md-2 me-lg-0 mb-xl-0'>
                         <h2 className='planet-name heading-2 py-2'>{name}</h2>
                         <p className='planet-info py-3'>{planetText}</p>
@@ -140,7 +140,7 @@ export default function PlanetContent(props) {
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </section >
 
         )
