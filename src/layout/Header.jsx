@@ -11,9 +11,9 @@ export default function Header() {
                 <Container className='d-md-flex flex-md-column flex-xl-row justify-content-lg-between' fluid>
                     <NavbarBrand className='text-uppercase pb-md-4  pt-lg-3 ms-xl-5 page-title'>The Planets
                     </NavbarBrand>
-                    <NavbarToggle aria-controls='navbarScroll' id='navbarBtn' className='custom-toggler' />
+                    <NavbarToggle aria-controls='navbarCollapse' id='navbarBtn' className='custom-toggler' />
                     <NavbarCollapse id='navbarCollapse' className='flex-lg-grow-0'>
-                        <Nav className='me-auto d-md-inline-flex justify-content-md-center align-items-md-start gap-4 gap-md-3 gap-lg-4 pe-md-2 pe-lg-5' id='navbarNav'>
+                        <Nav className='me-auto d-md-inline-flex justify-content-md-center align-items-md-start gap-4 gap-md-3 gap-lg-4 pt-4 pb-5 pt-md-0 pb-md-0 pe-md-2 pe-lg-5' id='navbarNav'>
                             <NavLink to='/mercury' id='mercury' className='planet-page-link text-uppercase link-underline link-underline-opacity-0 d-inline-flex justify-content-between align-items-center border-bottom border-secondary border-1 border-opacity-25'>
                                 <div>
                                     <img src="/assets/mercury-circle.png" className='me-4 d-md-none' alt="" />
@@ -84,7 +84,7 @@ export default function Header() {
                                 </div>
                             </NavLink>
 
-                            <NavLink to='/neptune' id='neptune' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0 d-inline-flex justify-content-between align-items-center border-bottom border-secondary border-1 border-opacity-25'>
+                            <NavLink to='/neptune' id='neptune' className='planet-page-link  text-uppercase link-underline link-underline-opacity-0 d-inline-flex justify-content-between align-items-center  border-secondary border-1 border-opacity-25'>
                                 <div>
                                     <img src="/assets/neptune-circle.png" className='me-4 d-md-none' alt="" />
                                     <span>Neptune</span>

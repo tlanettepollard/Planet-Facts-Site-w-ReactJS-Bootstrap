@@ -89,17 +89,17 @@ export default function PlanetContent(props) {
                     <ul className={`nav-buttons d-flex flex-row flex-md-column justify-content-between align-items-center px-2 py-2 container borderTop borderBottom ${planetId}`}>
                         <li>
                             <Button className={`btnPlanetMobile mx-2 pt-4 ${pageState === 'overview' ? 'active' : null}`} size='sm' type='button' onClick={showOverviewInfo}>
-                                <h6 className='text-uppercase text-secondary heading-6'>Overview</h6>
+                                <span className='text-uppercase text-secondary heading-6'>Overview</span>
                             </Button>
                         </li>
                         <li>
                             <Button className={`btnPlanetMobile mx-2 pt-4 ${pageState === 'structure' ? 'active' : null}`} size='sm' type='button' onClick={showStructureInfo}>
-                                <h6 className=' text-uppercase text-secondary heading-6'>Structure</h6>
+                                <span className=' text-uppercase text-secondary heading-6'>Structure</span>
                             </Button>
                         </li>
                         <li>
                             <Button className={`btnPlanetMobile mx-2 pt-4 ${pageState === 'geology' ? 'active' : null}`} size='sm' type='button' onClick={showSurfaceInfo}>
-                                <h6 className=' text-uppercase text-secondary heading-6'>Surface</h6>
+                                <span className=' text-uppercase text-secondary heading-6'>Surface</span>
 
                             </Button>
                         </li>
