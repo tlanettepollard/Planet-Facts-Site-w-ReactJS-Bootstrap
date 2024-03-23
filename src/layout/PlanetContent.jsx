@@ -118,23 +118,23 @@ export default function PlanetContent(props) {
                             <img src='/assets/icon-source.svg' alt='source icon' />
                         </div>
                     </div>
-                    <div role='tabletnavbuttons' className='col-md-6 col-lg-6 col-xl-8'>
+                    <div role='tabletbuttons' className='col-md-6 col-lg-6 col-xl-8'>
                         <div className='planet-card__nav--tablet d-none d-md-block d-md-flex flex-md-column justify-content-md-center py-md-3'>
                             <div className={`nav-buttons--tablet d-grid gap-4 mt-3 ms-md-2 ms-xl-0 ${planetId}`}>
 
                                 <Button className={`text-start d-md-flex justify-content-md-start btnPlanetTablet ${pageState === 'overview' ? 'active' : null}`} size='lg' type='button' onClick={showOverviewInfo}>
-                                    <p className='m-2 text-secondary'>01</p>
-                                    <p className='m-2 text-uppercase fw-bold'>Overview</p>
+                                    <span className='m-2 text-secondary'>01</span>
+                                    <span className='m-2 text-uppercase fw-bold'>Overview</span>
                                 </Button>
 
                                 <Button className={`text-start d-md-flex justify-content-md-start btnPlanetTablet ${pageState === 'structure' ? 'active' : null}`} size='lg' type='button' onClick={showStructureInfo}>
-                                    <p className='m-2 text-secondary'>02</p>
-                                    <p className='m-2 text-uppercase fw-bold'> Structure</p>
+                                    <span className='m-2 text-secondary'>02</span>
+                                    <span className='m-2 text-uppercase fw-bold'> Structure</span>
                                 </Button>
 
                                 <Button className={`text-start d-md-flex justify-content-md-start btnPlanetTablet ${pageState === 'geology' ? 'active' : null}`} size='lg' type='button' onClick={showSurfaceInfo}>
-                                    <p className='m-2 text-secondary'>03</p>
-                                    <p className='m-2 text-uppercase fw-bold'>Surface</p>
+                                    <span className='m-2 text-secondary'>03</span>
+                                    <span className='m-2 text-uppercase fw-bold'>Surface</span>
                                 </Button>
 
                             </div>
