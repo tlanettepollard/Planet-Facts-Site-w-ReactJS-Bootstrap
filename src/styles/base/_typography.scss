@@ -61,6 +61,10 @@ body {
     color: $main-light !important;
     text-transform: uppercase;
 
+    @include bp-tablet-up {
+        font-size: 1.875rem !important;
+    }
+
 }
 
 .planet-page-link {

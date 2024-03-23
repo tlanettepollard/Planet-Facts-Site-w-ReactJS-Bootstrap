@@ -61,6 +61,11 @@ body {
   color: #ffffff !important;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 768px) {
+  .page-title {
+    font-size: 1.875rem !important;
+  }
+}
 
 .planet-page-link {
   color: #ffffff !important;
@@ -229,6 +234,11 @@ body {
   color: #ffffff !important;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 768px) {
+  .page-title {
+    font-size: 1.875rem !important;
+  }
+}
 
 .planet-page-link {
   color: #ffffff !important;
@@ -276,28 +286,28 @@ body {
   width: 100%;
 }
 
-.planet-card__nav--mobile .mercury .btn-primary.active {
+.planet-card__nav--mobile .planetMercury .btn-primary.active {
   border-color: #419ebb !important;
 }
-.planet-card__nav--mobile .venus .btn-primary.active {
+.planet-card__nav--mobile .planetVenus .btn-primary.active {
   border-color: #eda249 !important;
 }
-.planet-card__nav--mobile .earth .btn-primary.active {
+.planet-card__nav--mobile .planetEarth .btn-primary.active {
   border-color: #6f2ed6 !important;
 }
-.planet-card__nav--mobile .mars .btn-primary.active {
+.planet-card__nav--mobile .planetMars .btn-primary.active {
   border-color: #d14c32 !important;
 }
-.planet-card__nav--mobile .jupiter .btn-primary.active {
+.planet-card__nav--mobile .planetJupiter .btn-primary.active {
   border-color: #d83a34 !important;
 }
-.planet-card__nav--mobile .saturn .btn-primary.active {
+.planet-card__nav--mobile .planetSaturn .btn-primary.active {
   border-color: #cd5120 !important;
 }
-.planet-card__nav--mobile .uranus .btn-primary.active {
+.planet-card__nav--mobile .planetUranus .btn-primary.active {
   border-color: #1ec2a4 !important;
 }
-.planet-card__nav--mobile .neptune .btn-primary.active {
+.planet-card__nav--mobile .planetNeptune .btn-primary.active {
   border-color: #2d68f0 !important;
 }
 .planet-card__nav--mobile .btn-primary.active {
